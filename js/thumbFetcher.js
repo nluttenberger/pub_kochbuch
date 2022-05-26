@@ -52,7 +52,7 @@ hdrs = {
 // create list of recipes
 let myColl;
 myColl = window.location.hostname;
-basePathRecipes = `${myColl}/recipes`;
+basePathRecipes = 'recipes/';
 myColl = myColl.substring(0,myColl.indexOf('.'));
 let url_str;
 url_str = `https://api.github.com/repos/nluttenberger/${myColl}/contents`;
