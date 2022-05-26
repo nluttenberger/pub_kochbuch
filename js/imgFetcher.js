@@ -64,7 +64,7 @@ let x;
 let myBase = window.location.origin;
 let myColl;
 myColl = window.location.hostname;
-basePathRecipes = `${myColl}/recipes`;
+basePathRecipes = 'recipes/;
 for (let rcp of rcpArr) {
 	let rcpName = rcp.substring(rcp.indexOf('/') + 1);
 	x = `<li><a href="${myBase}/recipes/${rcp}.html" target="_blank"> ${rcpName}</a></li>`;
