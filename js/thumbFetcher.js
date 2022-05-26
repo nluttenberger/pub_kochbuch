@@ -9,7 +9,6 @@ function fetchResource(recipeName) {
 	let path2Thumb = basePathThumbs;
 	path2Thumb += recipeName.substring(recipeName.indexOf('/') + 1);
 	path2Thumb += '.jpg';
-	console.log (path2Thumb);
 	fetch(path2Thumb, {
 		cache: "no-store"
 	})
