@@ -1,7 +1,7 @@
 // keep in mind: img and thumbs pathes don't include chapter info
 const basePathThumbs = 'https://storage.googleapis.com/testx.fruschtique.de/thumbs/';
 const basePathImg = 'https://storage.googleapis.com/testx.fruschtique.de/img/';
-const basePathRecipes = 'https://menu-22.fruschtique.de/recipes/'
+const basePathRecipes;
 let i = 0;
 let innerCarousel = document.getElementById('inner');
 // get image
@@ -53,10 +53,8 @@ hdrs = {
 let url_str;
 let myColl;
 myColl = window.location.hostname;
-console.log (myColl);
+basePathRecipes = `${myColl}/recipes`;
 myColl = myColl.substring(0,myColl.indexOf('.'));
-// console.log (myColl);
-
 url_str = `https://api.github.com/repos/nluttenberger/${myColl}/contents`;
 fetch(url_str, {
 	headers: hdrs
@@ -95,11 +93,3 @@ fetch(url_str, {
 	console.log('Error while reading collection sha:', error);
 })
 
-/*let oLength = document.getElementById('allRecipesList').options.length;
- let arr = [];
- let x;
- for (let i=0;i<oLength;i++) {
- x = document.getElementById('allRecipesList').options[i].value;
- arr.push (x);
- }
- console.log (arr);*/
