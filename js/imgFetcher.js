@@ -1,6 +1,6 @@
 const basePathThumbs = 'https://storage.googleapis.com/testx.fruschtique.de/thumbs/';
 const basePathImg = 'https://storage.googleapis.com/testx.fruschtique.de/img/';
-const basePathRecipes = 'https://menu-22.fruschtique.de/recipes/'
+let basePathRecipes;
 let i = 0;
 let innerCarousel = document.getElementById('inner');
 
@@ -62,6 +62,9 @@ for (let i=0;i<oLength;i++) {
 // set links to recipes and get recipe images
 let x;
 let myBase = window.location.origin;
+let myColl;
+myColl = window.location.hostname;
+basePathRecipes = `${myColl}/recipes`;
 for (let rcp of rcpArr) {
 	let rcpName = rcp.substring(rcp.indexOf('/') + 1);
 	x = `<li><a href="${myBase}/recipes/${rcp}.html" target="_blank"> ${rcpName}</a></li>`;
