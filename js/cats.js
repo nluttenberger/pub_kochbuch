@@ -26,6 +26,7 @@ const categories = [
 ]
 let chapters = [];
 let recipesChapterwise = new Map;
+let myColl;
 
 function getChapters () {
 // create list of chapters
@@ -35,7 +36,9 @@ function getChapters () {
     'Accept': 'application/vnd.github.v3+json',
     'Authorization': apiKey
   }
-  const myColl = "Sammlung_2022";
+  myColl = window.location.hostname;
+  console.log (myColl);
+  myColl = myColl.substring(0,myColl.indexOf('.'));
   url_str = `https://api.github.com/repos/nluttenberger/${myColl}/contents`;
   fetch(url_str,{headers: hdrs})
     .then(resp => {
@@ -130,10 +133,4 @@ function saveCatAssignments() {
   }
   let xmlText = new XMLSerializer().serializeToString(xmlDoc);
   console.log (xmlText)
-
-  /*
-  var blob = new Blob([xmlText], {type: "application/xml;charset=utf-8"});
-  saveAs(blob, "cat-test" + ".xml");
-  */
-
 }
