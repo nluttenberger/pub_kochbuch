@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="de">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">       
+       <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1" />
+       <title>Über das Kochbuch</title>
+              
+       <!-- base -->
+       <base href="file:///C:/Users/nlutt/Documents/Websites/kochbuch/experimental/">
+       <!--<base href="https://kochbuch.fruschtique.de/">--> 
+       <!-- base -->
+              
+       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans" >
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower" >
+       <link rel="stylesheet" href="recipe.css" type="text/css" >
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+       <script src="js/wordcloud2.js"></script>
+       <script src="js/lodash.min.js"></script>
+</head>
+   <body>
+      <div class="boxtainer"><div class="title">
+    <h1>Über das Kochbuch</h1>
+</div>
+
+<div class="logo">
+    <div>
+        <a href="index.html">
+            <img class="logoImage" src="https://storage.googleapis.com/testx.fruschtique.de/logos/fruschtique%20Logo%20grau%20transparent.png" alt="Logo" title="Kochbuch-Logo">
+        </a>
+    </div>
+    <div>
+        <ul class="nav-top">
+            <!-- eins -->
+            <!-- zwei -->
+            <!-- drei -->
+            <li class="nav-item">
+                <a href="nav/book-toc.html">
+                    <img style="display:inline;" src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-toc.png" alt="Inhaltsverzeichnis" title="Inhaltsverzeichnis">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="nav/cat-tiles-only.html">
+                    <img style="display:inline;" src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-tiles.png" alt="Kachelmenu" title="Kachelmenü">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="nav/index-ingdt.html">
+                    <img style="display:inline;" src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-index-ingredient.png" alt="Zutaten-Index" title="Zutaten-Index">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="nav/index-rcp.html">
+                    <img style="display:inline;" src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-index-rcp.png" alt="Rezept-Index" title="Rezept-Index">
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" style="cursor: pointer; text-decoration: none;">
+                    <img src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-more.png" alt="mehr" title="mehr">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="nav/about_cookbook.html">Über das Kochbuch</a></li>
+                    <li><a href="nav/about_author.html">Über mich</a></li>
+                    <li><a href="nav/book-help.html">Gebrauchsanweisung</a></li>
+                    <li><a href="nav/book-blog.html">Making of …</a></li>
+                    <li><a href="nav/book-versions.html">Versionsgeschichte</a> </li>
+                    <li><a href="nav/book-impressum.html">Impressum</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+         <div class="full"><main class="main-area">
+    <div class="chapter">
+        <div>
+            <h3>Wie es dazu kam, dass ich angefangen habe, <br/>dieses Kochbuch zu schreiben.</h3>
+            <p>"Papa &hellip; ?"</p>
+            <p>Au weia! Was ist los?</p>
+            <p>Mirjam fährt mit ihrer Schulklasse in ein Landschulheim. Der Lehrer (gedankt sei
+                ihm!) stellt den Schülerinnen und Schülern eine lebenspraktische Aufgabe: An jedem
+                Tag des Aufenthalts im Landschulheim ist eine Schülerin/ein Schüler (oder zwei) für
+                das Bekochen der Schulklasse zuständig. Im Aufgabenheft steht: Einkaufsliste und
+                Rezept mitbringen. Achtung: Dreißig alters&shy;gemäß hungrige Personen müssen satt
+                werden. </p>
+            <p>"Also, es soll etwas Besonderes sein, es soll gut schmecken, und es muss ganz leicht
+                zu kochen sein!"</p>
+            <p>"Und Du musst es mir aufschreiben &ndash; aber so, dass ich's verstehe!"</p>
+            <p>Es war der Startschuss. Für alle meine Aktivitäten in puncto "Schreiben eines Koch&shy;buchs".
+                Wer hätte das gedacht?</p>
+            <p>Ich weiss noch, dass ich Mirjam "Bulgur mit Lauch und Karotten" vorgeschlagen und
+                aufge&shy;schrieben habe. Bulgur kannte zu der Zeit, um die es hier geht, kaum
+                jemand. (Nur einge&shy;fleischte Reformhaus&shy;kunden kannten damals schon das
+                ernäh&shy;rungs&shy;technische Äquivalent zum Bulgur: die Thermo&shy;grütze. Da die
+                Thermo&shy;grütze aber stets zu Brei zerkocht wird, kommt niemand auf die Idee, dass
+                Bulgur und Thermo&shy;grütze nicht nur beide aus Getreide&shy;schrot bestehen,
+                sondern auch ähnlich her&shy;gestellt werden.) Lauch und Karotten sind einfach zuzu&shy;bereiten,
+                und wenn man zu Bulgur und Gemüse einen Stich Butter gibt, dann schmeckt das ganz
+                prima. Naja, Salz und Pfeffer auch. Aber ich will jetzt hier ja kein Rezept
+                schreiben &hellip; Ich habe Mirjam für ihr Landschul&shy;heim eine große Packung
+                Bulgur aus dem Bio&shy;laden mit&shy;gegeben. Viel später habe ich entdeckt, dass es
+                Bulgur in türkischen Geschäften sack&shy;weise zu kaufen gibt &ndash; so wie bei
+                meinem Lieblings&shy;türken, dem Sultan-Markt in Kiel. Mirjam hat berichtet, dass es
+                der Schul&shy;klasse gut geschmeckt hätte, dass es niemand zuvor kannte, und dass
+                sich die Mühen der Zubereitung tat&shy;sächlich in Grenzen gehalten hätten. Zusammen&shy;gefasst:
+                Für den angehenden Kochbuch&shy;schreiber ein ermutigender Anfangs&shy;erfolg.</p>
+            <p>Nach der gelungenen Bulgur-Verkostung hat Mirjam leider keine weiteren Ambitionen am
+                Herd mehr entwickelt. Schade!</p>
+            <p>Zu welchem Zweck also schreibe ich dann (nicht erst seit heute) eigentlich ein
+                Kochbuch?</p>
+            <p>Vielleicht, weil da mehrere Interessen zusammen&shy;kommen: Ich schreibe gern, ich
+                foto&shy;grafiere gern, ich koche gern. Ich stecke ebenso gern Zeit und Energie in
+                die For&shy;matie&shy;rung von Texten. Und nicht zuletzt hat mir die XML/XSLT/&shy;HTML/CSS/JS-Programmierung
+                bei der Erstellung dieser elek&shy;tronischen Version meines Koch&shy;buchs viel
+                Spass gemacht. Obwohl ich manchmal lieber über die damit ver&shy;bun&shy;denen
+                Schwierig&shy;keiten gejault habe, als meine Begeisterung zu zeigen.</p>
+            <p>Auch die vielen, teil&shy;weise phan&shy;tastischen <i>food blogs</i>, die es im Netz
+                zu lesen gibt, waren selbst&shy;verständ&shy;lich ein gewaltiger Ansporn für mich.</p>
+            <h3>Was mich beim Aufschreiben von Rezepten beschäftigt.</h3>
+            <p style="text-indent: 0;">Auf den ersten Blick scheinen Rezepte einfache Gebrauchstexte zu sein, die man
+                "einfach so" herunterschreiben kann. Wenn man Rezepte schreibt oder schon viele
+                geschrie&shy;ben hat, dann dämmert es einem, dass es so ein&shy;fach nicht ist. Ich
+                versuche, in den folgenden beiden Abschnitten darzustellen, was mir durch den Kopf
+                geht, wenn ich mich frage:</p>
+            <ul style="margin: 0.5em;">
+                <li style="margin: 0.5em;">Wie schreibe ich ein Rezept so auf, dass es leicht
+                    nachgekocht werden kann?
+                </li>
+                <li style="margin: 0.5em;">Wie halte ich's mit der Genauigkeit?</li>
+            </ul>
+        </div>
+        <img src="https://storage.googleapis.com/testx.fruschtique.de/crop/Brotaufstrich.jpg" alt="Brotaufstrich" class="croppedImageRight"/>
+    </div>
+    <div class="chapter">
+        <img src="https://storage.googleapis.com/testx.fruschtique.de/crop/Bärlauch.jpg" alt="Bärlauch" class="croppedImageLeft"/>
+        <div>
+            <h4>Vom Aufschreiben zum Nachkochen</h4>
+            <p>Damit ein Rezept leicht nachgekocht werden kann, sollte der Aufschrieb mindestens
+                eine Zutaten&shy;liste und einen Anweisungs&shy;teil umfassen. Die Zutaten&shy;liste muss nicht
+                weiter diskutiert werden; es ist der Anweisungs&shy;teil, der verständlich oder
+                unver&shy;ständ&shy;lich sein kann und damit einen Ein&shy;fluss darauf hat, ob ein Rezept
+                nach&shy;gekocht wird oder nicht. Wie also den Anwei&shy;sungs&shy;teil auf&shy;schreiben? </p>
+            <p>Eine einfache Antwort auf diese Frage könnte lauten: Naja, man muss sich nur selbst
+                in der Küche beob&shy;achten und dann die eigenen Aktionen der Reihe nach beschreiben.
+                Ich denke, da wird kein Schuh draus.</p>
+            <p>Zum einen: Es gibt viele Rezepte, die dazu einladen, beim Kochen mehrere Aktionen
+                gleichzeitig voranzutreiben: Während die Zwiebeln in der Pfanne schwitzen, hacke ich
+                schon 'mal den Thymian, der später an die Sauce kommt. Mal abgesehen davon, dass es
+                in einem linearen Text sowieso schwierig ist, Gleichzeitigkeit zu beschreiben
+                &ndash; ich frage mich, ob ich der besseren Nachkochbarkeit wegen aufschreiben
+                sollte, welche Aktionen bei der Zubereitung gleich&shy;zeitig durch&shy;geführt werden können
+                oder sogar sollten.</p>
+            <p>Meine Überzeugung: Jeder Koch, jede Köchin hat eine persönliche Arbeitsweise, und das
+                bedeutet, dass man selbst herausfinden muss, welcher Ablauf für die Zubereitung des
+                jeweiligen Rezepts der "richtige" ist. Und das kann bedeuten, dass man dazu ein
+                Rezept erst mehr&shy;mals ausprobieren muss. Ich selber mag es eher lang&shy;sam:
+                Nur zu oft habe ich in größter Eile am Herd gestanden und versucht, so viele Dinge
+                wie möglich gleich&shy;zeitig zu machen. Die Resultate: Kreuz&shy;schmerzen und ein
+                Essen, das nicht so gut gelungen ist, wie ich es mir gewünscht habe. Mein Vorbild:
+                Der Fernseh&shy;koch. Der hat ein Arsenal von adrett vor&shy;bereiteten Zutaten in
+                kleinen oder großen Glas&shy;schüsseln vor sich stehen und rührt eine nach der
+                anderen in die zuzu&shy;bereitende Speise. Der <i>high speed chef</i> dagegen kocht
+                schon, während er noch vorbereitet, und bereitet noch vor, während in der Pfanne
+                schon das Schnitzel zischt. Jonglieren mit Messern, Zutaten, Töpfen, Deckeln und
+                Schneide&shy;brettern: <i>Some like it fast!</i> Und für diese Art von Koch ist der
+                Fernseh&shy;koch definitiv zu langsam. Also: Beim Aufschreiben eines Rezepts eine
+                bestimmte Aktionsfolge anzugeben, scheint mir nicht besonders sinnvoll.</p>
+            <p>Zum anderen: Bei der Befolgung einer exakt schritt&shy;weise aufgeschriebenen Koch&shy;anleitung
+                entsteht am Ende möglicher&shy;weise ein gelungenes Gericht, aber es wird einem wie
+                ein Wunder vorkommen, dem man nur die Hände geliehen hat. Kochen quasi als Hand&shy;langer&shy;dienst
+                für eine höhere kulinarische Intelligenz. Rezepte, die eine klein&shy;teilige
+                Schritt&shy;folge beschreiben, verbergen die <i>Idee</i> hinter all den Details.
+                Wenn das Waschen des Spinats in gleicher Weise erwähnt wird wie das Würzen mit
+                Muskat, dann ist das unter einem kuli&shy;narischen Blick&shy;winkel nicht ange&shy;messen.
+                Deshalb mag ich allzu klein&shy;teiliges Auf&shy;schreiben ganz und gar nicht.</p>
+            <p>Wie also vorgehen beim Schreiben?</p>
+            <p>Ich habe beobachtet, dass sich viele Rezepte leichter
+                lesen lassen, wenn man sich vorstellt, dass in diesen Rezepten Zutaten zu
+                Komponenten zusammen&shy;gesetzt werden und dann die Kom&shy;ponenten zum gesamten
+                Gericht. Selbst&shy;ver&shy;ständlich kann es sein, dass die Fertig&shy;stellung
+                einer Kom&shy;ponente sehr lange dauert, z.B. wenn in die Zube&shy;reitung dieser
+                Komponente das Marinieren von Fleisch oder Fisch eingeschlossen ist. In solchen
+                Fällen sind offen&shy;sichtlich parallele Aktivitäten gefragt, man muss dem Fleisch
+                ja nicht beim Marinieren zuschauen. Für das Auf&shy;schreiben von Rezepten habe ich
+                aus dieser Beob&shy;achtung die Kon&shy;sequenz gezogen: Die Kom&shy;ponen&shy;ten&shy;struktur
+                möchte ich heraus&shy;arbeiten, Parallel&shy;arbeit erwähne ich nur für "große"
+                Schritte. Ich hoffe, das mir das (fast) immer gelungen ist.</p>
+        </div>
+    </div>
+    <div class="chapter">
+        <div>
+            <h4>Rezepte und "Genauigkeit"</h4>
+            <p>Nun also zur zweiten Frage: Wie hält man's mit der Genauigkeit?</p>
+            <p>Genauigkeit kann sich auf Zeiten, Temperaturen, Mengen und Zutaten beziehen. Zeiten
+                und Tempe&shy;raturen genau vorzugeben, halte ich für sehr schwierig: Gart man z.B.
+                ein Steak nach dem Anbraten im Ofen, dann bestimmt sich die Kombi&shy;nation aus Gar&shy;zeit
+                und Temperatur ganz wesent&shy;lich nach der Dicke des Fleisch&shy;stücks. Brät man
+                eine Scheibe Leber in der Pfanne, dann ist die Leber am dünnen Ende der Scheibe
+                vielleicht schon nach einer Minute durch, während sie am dicken Ende noch eine
+                weitere Minute benötigt hätte. Beim Garen der Roten Bete in Alu&shy;folie im Ofen,
+                wie ich es <a href="../recipes/Rote%20Bete.html" target="_blank">hier</a>
+                beschreibe, benötigt man für "kleine" Rote Bete ca. 1&frac12;&nbsp;h, für "große"
+                aber 2&nbsp;h. Die Wahl der "richtigen" Garzeiten und Tempe&shy;raturen hat also
+                viel mit Erfahrung zu, man kann sie nicht "genau" aufschreiben. Genauig&shy;keit im
+                engeren Sinne des Wortes gibt es nicht.</p>
+            <p>Mengen: Bei der Zubereitung von Teigen aller Art (Hefe&shy;teig, Nude&shy;lteig,
+                Quiche-Teig, Gnocchi-Teig) arbeite ich Gramm-genau. Ich habe die Erfahrung gemacht,
+                dass Teige sonst nicht gelingen: Sie werden so klebrig, dass man sie nicht
+                be&shy;arbei&shy;ten kann, oder sie sind so weich, dass man sie nicht gut formen kann, oder
+                sie werden rissig beim Aus&shy;rollen. Bei allen anderen Zutaten sollen die Mengen&shy;angaben
+                eher als Schätz&shy;werte dienen. Und natürlich kann man bewusst für eine bestimmte
+                Zutat ein andere als die ange&shy;gebene Menge wählen, um z.B. den Geschmack dieser
+                Zutat besonders hervor&shy;zuheben.</p>
+            <p>Nun also zur Genauigkeit bei den Zutaten. Meine Über&shy;zeugung: Es gibt
+                Genauigkeit, und es gibt Über&shy;genauig&shy;keit. Fordert z.B. Johann Lafer in
+                vielen Rezepten, dass "Kalahari-Salz" zu verwenden sei, dann ist das eine Über&shy;genauig&shy;keit,
+                und zwar eine Über&shy;genauig&shy;keit, die kuli&shy;narisch bedeutungs&shy;los ist
+                &ndash; außer vielleicht man isst das Salz pur. Was ja unter kuli&shy;narischen
+                Gesichts&shy;punkten eher nicht zu empfehlen ist. Bei solchen Angaben habe ich stets
+                den Verdacht, dass sich der Rezept&shy;autor in Szene setzen möchte ("Schau 'mal
+                her: Ich schmecke in diesem Gericht mit seinen 20 Zutaten sogar noch die verwendete
+                Salz&shy;sorte heraus!") und/oder dass es schlicht um's Geschäft geht: Der Hobby&shy;koch,
+                der sich keine Fehler vorwerfen lassen will, zückt ergeben den Geld&shy;beutel und
+                kauft 180&#x202f;g Salz für 7,50&#x202f;€ (bei Amazon gesehen). Bekloppt!</p>
+            <p>Richtig ärgerlich sind solche Über&shy;genauig&shy;keiten, wenn der Leser durch sie
+                verleitet wird zu glauben, <em>nur</em> mit einer solch übergenau spezi&shy;fizier&shy;ten
+                Zutat könne das Rezept gelingen. Das ist natürlich Unsinn. Ich versuche, solche
+                Angaben &ndash; mög&shy;lichst immer &ndash; wie folgt zu lesen: Der Autor hat das
+                Rezept mit näm&shy;licher Zutat aus&shy;probiert &hellip; und hurra! Es ist gelungen! Über andere Vari&shy;anten weiss der Rezept&shy;autor leider nichts. Aber
+                ich gebe es gerne zu: Ich bin auch oft genug hinter Spezial&shy;pro&shy;dukten
+                hergerannt, weil ich geglaubt habe, dass es ohne die nicht geht.</p>
+            <p style="margin-bottom: 1em;">Im Informatiker-Deutsch ausgedrückt: Wenn nichts anderes
+                gesagt wird, sind Angaben in Rezepten zunächst einmal im Sinne der <i>Open World Assumption </i>zu lesen: So, wie es da aufgeschrieben ist, hat es schon einmal
+                funktioniert. Über alles andere weiß man nichts. Das heisst aber nicht, dass es nicht genau so gut klappt.</p>
+        </div>
+        <img src="https://storage.googleapis.com/testx.fruschtique.de/crop/Salz%20und%20Pfeffer.jpg" alt="Salz und Pfeffer"
+             class="croppedImageRight"/>
+    </div>
+    <div class="chapter">
+        <img src="https://storage.googleapis.com/testx.fruschtique.de/crop/Granatapfel.jpg" alt="Granatapfel" class="croppedImageLeft"
+             style=/>
+        <div>
+            <h3>Ein paar Gedanken zur Gestaltung der Rezeptseiten.</h3>
+            <p>In meiner internen Zählung handelt es sich hier um die Version 4 meines Koch&shy;buchs.
+                Ursprünglich hatte ich geplant, auch diese Version auf der Basis des pdf-Datei&shy;formats
+                zu erstellen. Es sollte ein etwas forscheres Layout geben, und das DIN A4-Seiten&shy;format
+                sollte zwecks besserer Dar&shy;stellung auf handels&shy;üblichen Bild&shy;schirmen
+                zugunsten eines 16:10-Seiten&shy;formats ver&shy;lassen werden. Die Druck&shy;dar&shy;stellung
+                hätte darunter nur unwesent&shy;lich gelitten.</p>
+            <p>Irgendwann habe ich gemerkt: Das ist kein wirklicher Fort&shy;schritt, es ist
+                schlicht <i>more of the same</i>, auch wenn ich das neue Layout etwas auf&shy;ge&shy;hübscht
+                hätte. Nur eine komplett Web-basierte Lösung, d.h. also eine Lösung ohne pdf für die
+                Seiten&shy;darstellung und ohne DTP-System für die Seiten&shy;erstellung, würde
+                etwas wirk&shy;lich Neues bringen.</p>
+            <p>Es hat wiederum eine gewisse Zeit gebraucht, bis ich begriffen habe, dass diese Ent&shy;scheidung
+                für eine Web-basierte Lösung nicht nur einen Haufen von tech&shy;ni&shy;schen
+                Problemen erzeugt (s.u.), sondern auch neue gestal&shy;teri&shy;sche Auf&shy;gaben
+                stellt. Wenn ich letztere zusammen&shy;fassen sollte, würde ich etwa wie folgt for&shy;mu&shy;lieren:</p>
+            <p>Der Bildschirm ist dem Papier überlegen: Man kann mit dem Bildschirm per <i>zoom</i>
+                oder <i>scroll</i> eine unendlich große Dar&shy;stellungs&shy;fläche betrachten,
+                eine Fläche, die sich nach links und nach rechts und nach oben und nach unten ins
+                Unendliche erweitert, man kann diese Dar&shy;stellungs&shy;fläche mit mehreren trans&shy;parenten
+                oder opaken Ebenen, die "über&shy;einander" an&shy;ge&shy;ord&shy;net werden, ver&shy;viel&shy;fachen,
+                und schließ&shy;lich ist die Anzahl solcher Dar&shy;stellungs&shy;flächen &ndash;
+                anders als die Anzahl der Seiten in einem Buch &ndash; de facto nicht beschränkt.
+                Fazit: Es macht keinen Sinn, eine Web-basierte Lösung zu erstellen, die von dieser
+                Über&shy;legen&shy;heit des Bild&shy;schirms keinen Gebrauch macht. (Neben&shy;bemerkung:
+                War das jetzt etwa ein Bei&shy;trag zum Thema "Medien&shy;kom&shy;petenz"? Ich
+                finde, es könnte einer sein.)</p>
+            <p>Zwischenschritt: Bei den Papier-/pdf-Versionen meines Koch&shy;buchs hatte ich mir
+                eine feste Regel vor&shy;gegeben: Jedes Rezept inklusive Rezept&shy;foto muss auf
+                eine DIN&nbsp;A4- bzw. 16:10-Seite passen. Sonst würde das "Einbauen" eines neuen
+                Rezepts in das Koch&shy;buch mög&shy;licher&shy;weise schwierig werden. Der Wer&shy;muts&shy;tropfen
+                dabei: Auf einer DIN&nbsp;A4-Seite bleibt nicht viel Platz für das Rezept&shy;foto,
+                vor allem, wenn man Platz haben will, um Zutaten&shy;liste und Anweisungs&shy;teil
+                typo&shy;grafisch gut gegen&shy;einander abzu&shy;grenzen. Und kleine Bilder wurmen
+                nicht nur den Foto&shy;grafen, sondern auch den Rezept&shy;autor, der doch weiss,
+                dass nur Rezepte mit einer üppigen Bild&shy;aus&shy;stattung eine gute Chance haben,
+                nach&shy;gekocht zu werden.</p>
+            <p>Und nun?</p>
+            <p>Im Unterschied zur Papier-Welt steht in der Web-(HTML-)basierten Welt für die Dar&shy;stellung eines Rezepts
+                nicht nur die Fläche einer DIN&nbsp;A4-Seite zur Ver&shy;fügung, sondern zum Glück eine unendlich große Fläche,
+                auf der man Infor&shy;mations&shy;elemente ablegen kann. Diese Informationselemente kann die Nutzerin/der Betrachter durch <i>scroll</i> und <i>zoom</i>
+                und/oder durch pro&shy;gramm&shy;ge&shy;steuertes Verschieben dieser Informations&shy;elementen (z.B. ausgelöst durch Click)
+                zur Ansicht bringen. Quint&shy;essenz: Datei&shy;format und Dar&shy;stellungs&shy;fläche sind bei HTML von&shy;einander ent&shy;koppelt!</p>
+            <p>Nach der Entscheidung für eine Web-basierte Lösung mit ihren unendlich großen Flächen gab es für mich
+                zunächst einmal ein Hurra: Ich kann endlich die Rezept&shy;fotos richtig groß machen! Und ich kann die
+                ungeteilte Aufmerk&shy;samkeit der Leserin auf das Rezept&shy;foto richten, wenn ich es ohne Rezept&shy;text
+                prä&shy;sentiere!</p>
+            <p>Allerdings wäre es ein falscher Ansatz gewesen, die Rezept&shy;fotos schlicht bild&shy;schirm&shy;füllend
+                zu zeigen: Das hätte bedeutet, dass die Leserin schluss&shy;end&shy;lich genötigt wird, zwischen Text und Bild hin und her
+                zu blättern. Das wäre mir zu dicht an einer denk&shy;baren Papier-basierten Lösung gewesen. Lösung: Das
+                Rezeptfoto zeige ich ziemlich groß, aber nicht bild&shy;schirm&shy;füllend, und den Rezept&shy;text parke ich außer&shy;halb
+                des sicht&shy;baren Bereichs, oder ich falte ihn zusammen. Und erst bei Click zeige ich ihn. Und dabei darf der
+                Text dann gerne das Rezept&shy;foto teilweise überlagern. Will sagen: Ich stelle einen Knopf zur Ver&shy;fügung, mit
+                dem die Leserin den Rezept&shy;text sichtbar machen kann, wenn sie das Bild betrachtet hat. Der Zusammen&shy;hang
+                zwischen Bild und Text bleibt erhalten.</p>
+            <p>Zusätzliche Idee: Das Sichtbar-Machen des Textes soll ein bisschen <i>fancy</i> sein, also: <i>animation</i>.
+            </p>
+            <p style="margin-bottom: 1em;">Wenn ich hier von "unendlich großen Flächen" rede, dann dämmert es Dir, liebe
+                Leserin, dass ich mit dem Design-Dogma <i>"Mobile first!"</i> einige Schwierigkeiten hatte. Auf mobilen Geräten
+                sind die Flächen aus meiner Perspektive unendlich klein, und das Her&shy;stellen eines Zusammen&shy;hangs zwischen einzelnen
+                In&shy;for&shy;ma&shy;tions&shy;ele&shy;menten (also z.B. zwischen einem Bild und einem be&shy;schrei&shy;benden Text) kann nicht auf dem
+                Bildschirm stattfinden &ndash; es passiert &ndash; glückliche Umstände vorausgesetzt &ndash; allenfalls im Kopf
+                des Betrachters. Also habe ich mich zwar dem Thema <i>responsive design</i> gewidmet und habe eine "mobile
+                Version" erzeugt, aber glücklich bin ich nicht, wenn Du, liebe Leserin, mein Kochbuch nur mit dem Smartphone
+                und wohl&shy;möglich nur im <i>portrait mode</i> betrachtest: Meine eigentliche Design-Idee kannst Du, liebe Leserin,
+                voll&shy;umfäng&shy;lich nur in der Desktop- oder auch in der Tablet-Version erkennen. Nähere
+                Informa&shy;tionen zum Konzept des <i>responsive design</i> für dieses Rezeptbuch finden sich im Blog.</p>
+        </div>
+    </div>
+    <div class="chapter" id="software">
+        <div>
+            <h3>Zum Schluss und nur für Nerds: <br/>Meine Software zur Erstellung des Kochbuchs.</h3>
+            <p>Vor Beginn meiner Aktivitäten zur Erstellung einer "<i>pure online</i>"-Version
+                meines Kochbuchs habe ich über zwei technische Alter&shy;nativen nachgedacht:
+                ein Kochbuch auf der Basis eines Wordpress <i>theme</i> oder ein Kochbuch auf
+                der Basis einer Menge von statischen HTML-Seiten. Die Wordpress-Lösung hätte
+                mehrere Vorteile gehabt: Ich hätte mich aus&shy;schließlich auf das Schreiben
+                von Rezepten kon&shy;zen&shy;trieren können; Navigation und Backend
+                (Rezept-Editor und <i>Site Management</i>) wären mir in den Schoß gefallen.
+                Warum dennoch die hier vorzu&shy;stellende Lösung auf der Basis von statischen
+                HTML-Seiten?</p>
+            <p>Beim Start meiner Aktivitäten wollte ich zum einen die in der Vorgänger&shy;version vorhandenen Rezepte in das neue Koch&shy;buch
+                über&shy;nehmen, und zum anderen wollte ich durch die grund&shy;ständige
+                Pro&shy;gram&shy;mie&shy;rung von HTML-Seiten einige Webtechno&shy;logien praktisch kennenlernen.</p>
+            <p>Die Vorgänger&shy;version des Koch&shy;buchs baut auf elf FrameMaker(FM)-Dateien
+                auf: eine FM-Datei je Kapitel des Kochbuchs. Die elf FM-Dateien enthielten
+                insgesamt 128 Rezepte. Die am besten automatisierbare Möglich&shy;keit,
+                die in den FM-Dateien enthaltenen Rezepte in das neue Kochbuch zu über&shy;tragen,
+                bestand darin, die vorhandenen Dateien aus dem FM-Format in ein XML-Format zu
+                exportieren und dann daraus die Rezepte zu extrahieren. Eine Wordpress-Lösung
+                hätte mich wahrscheinlich dazu genötigt, die FM-Texte händisch per
+                <i>copy-paste</i> in irgendwelche Eingabemasken des jeweiligen <i>theme</i> zu
+                über&shy;tragen &hellip; und dazu hatte ich keine Lust. Und zum Thema Webtechnologien hätte ich nichts 
+                dazugelernt.</p>
+            <p>In einem ersten Arbeits&shy;schritt habe ich also die elf FM-Dateien in ein
+                XML-Format exportiert. Dann habe ich aus jeder XML-Datei die darin ent&shy;haltenen
+                Rezepte in se&shy;pa&shy;rate Rezept-Dateien extrahiert. Gleich&shy;zeitig mit
+                der Extrak&shy;tion habe ich eine Schema-Kon&shy;vertierung durchgeführt: Diese
+                Kon&shy;vertierung wandelt die dar&shy;stellungs&shy;orientierte FM-Auszeichnung
+                in eine von mir definierte inhalts&shy;orientierte Auszeichnung um. Die
+                Rezept-Dateien habe ich kapitel&shy;weise in separaten Unter&shy;verzeich&shy;nissen
+                abgelegt. Das Resultat also: 128 Rezept&shy;dateien in elf Unter&shy;verzeichnissen.</p>
+            <p>Damit war klar: Das "Urformat" für meine Rezeptaufschriebe ist das XML-Format;
+                das zugehörige Rezept-Schema ist in der Datei <code>recipe.xsd</code> enthalten,
+                und der <i>target namespace</i> heißt <code>http://fruschtique.de/ns/recipe</code>. 
+                Das Verzeichnis, das die kapitel&shy;weisen
+                Unter&shy;verzeichnisse enthält, heißt <code>recipe_xml</code>, und die Namen
+                der Unter&shy;verzeichnisse sind nach dem Schema <code>##&nbsp;[chap]</code>
+                gebildet, wobei "##" für die zwei&shy;stellige Kapitel&shy;nummer und "[chap]"
+                für den Kapitel&shy;namen steht. Beispiel: Das Rezept für die Zubereitung von
+                Arti&shy;schocken steht in der Datei <code>Artischocken.xml</code>, diese Datei
+                steht im Unter&shy;verzeichnis <code>02&nbsp;Vorspeisen</code>, und dieses
+                Verzeichnis ist ein Unter&shy;verzeichnis von <code>recipes_xml</code>.</p>
+            <p>So, also, Luft holen! Wie gehe ich nun weiter vor, was fange ich mit meinen 128
+                Rezepten in meinen elf Unter&shy;ver&shy;zeichnissen an?</p>
+            <p>Die Antwort: Ich musste einen recht komplexes Softwaresystem entwickeln, da insgesamt sechs Auf&shy;gaben zu lösen waren:</p>
+            <ol>
+                <li style="margin-top: 1em;"><b>Konvertierung der Rezepte vom xml- in das html-Format</b>: 
+                    Die in den Unterverzeichnissen des Ver&shy;zeich&shy;nisses
+                    <code>recipes_xml</code> ent&shy;haltenen Rezepte werden mit Hilfe des
+                    XSLT-Scripts <code>gen_pages-rcp.xsl</code> in das HTML-Format konvertiert.
+                    Die HTML-Dateien werden im Ver&shy;zeich&shy;nis <code>recipes</code>abgelegt;
+                    dieses Ver&shy;zeich&shy;nis hat keine Unter&shy;verzeich&shy;nisse. Je
+                    Rezept wird eine HTML-Datei erzeugt. Der Dateiname wird aus dem Inhalt des
+                    XML-Elements <code>fr:recipeName</code> und der Datei&shy;namens&shy;erweiterung
+                    <code>html</code> gebildet. Der Dateiname der zugehörigen Bild&shy;datei
+                    wird ebenfalls aus dem Inhalt des XML-Elements <code>fr:recipeName</code>
+                    erzeugt; die Datei&shy;namens&shy;er&shy;&shy;wei&shy;terung ist <code>jpg</code>. Zusätzlich erzeugt das
+                    Skript <code>gen_pages-rcp.xsl</code> auch die Deckblätter für die einzelnen
+                    Kapitel. Auch diese werden im Verzeichnis <code>recipes</code> abgelegt. 
+                    Die <i>word clouds</i>, die auf diesen Kapitel&shy;deck&shy;blätter gezeigt werden, 
+                    werden dynamisch im Browser von einem js-Script erzeugt (siehe
+                    <a href="book-blog.html#wordcloud" target="_blank">diesen <i>post</i></a> im
+                    <i>Making of</i>); dieses Script benutzt eine Wortliste, die aus den Schlüsselwort&shy;listen
+                    (<code>fr:recipeKeywords</code>) der im Kapitel enthaltenen Rezepte zusammengetragen wird.</li>
+                <li><b>Erzeugung des Inhaltsverzeichnisses</b>: 
+                    Das Inhaltsverzeichnis besteht aus einer Seite je Kapitel des Kochbuchs. 
+                    Diese Seiten werden mit Hilfe des Skripts <code>gen_pages-index.xsl</code> aus der Struktur des
+                    Ver&shy;zeich&shy;nisses <code>recipes_xml</code> abgeleitet.</li>
+                <li><b>Zuordnung von Rezepten zu Kategorien und Erstellung von
+                    Kategorienseiten</b>: Die Zuordnung von Rezepten zu Kategorien erfolgt über das
+                    Eingabeformular <code>form-recipe2cat assignment.html</code>, wobei
+                    eine zweistellige Versionsnummer angegeben werden kann. Die Eingabe wird
+                    wird im xml-Format abgespeichert, und dann werden daraus mit Hilfe des
+                    Skripts <code>gen_pages-cat.xsl</code> die für das Kategoriensystem
+                    erforderlichen Seiten generiert.
+                </li>
+                <li><b>Erstellung eines Zutaten-Index</b>:
+                    Das Skript <code>gen_pages-index.index</code> den Zutatenindex bzw.
+                    die entsprechende html-Datei <code>index-ingdt.html</code>. Dazu werden ebenfalls die schon oben erwähnten Schlüsselwort&shy;listen genutzt.
+                </li>
+                <li><b>Erstellung eines Rezept-Index</b>:Das Skript <code>gen_pages-index.xsl</code> extrahiert aus den
+                    xml-Rezeptdateien den im jeweiligen Element <code>fr:recipeName</code> enthaltenen Rezeptnamen und
+                    erzeugt daraus den Rezept-Index bzw. die entsprechende html-Datei <code>index-rcp.html</code>.
+                </li>
+                <li><b>Bereitstellungen von html-Formularen für die Bearbeitung von Rezepten</b>:
+                    Für jedes Rezept wird ein separates html-Formular erzeugt. Diese Formulare
+                    werden gleichzeitig mit den html-Rezeptseiten durch das Skript <code>gen_pages-rcp.xsl</code>
+                    erzeugt. Die Formulare stehen im Verzeichnis <code>forms</code>; der Dateiname wird aus dem <i>string</i> <code>form-</code>, dem Inhalt des
+                    XML-Elements <code>fr:recipeName</code> und der Datei&shy;namens&shy;erweiterung <code>html</code> gebildet.
+                </li>
+            </ol>
+            <p style="text-indent: 0;">Alle Aktivitäten zur Kochbucherstellung sind im 
+                XSLT-Skript <code>book-builder.xsl</code> zusammengefasst. Damit werden auch die Dateien
+                <code>about_me.html</code>, <code>about_cookbook.html</code>, <code>book-help.html</code>,
+                <code>book-blog.html</code>, <code>book-versions.html</code>, <code>book-impressum.html</code>
+                und <code>index.html</code> erzeugt, die z.T. HTML-Code ent&shy;halten, der 
+                "von Hand" programmiert ist. </p>
+            <p>Das Blockbild zeigt auch die "Rückkopplungsschleife", die dadurch entsteht, dass Rezepte (bzw. die Zuordnung von Rezepten zu Kategorien) 
+                über die erwähnten Formulare geändert oder sogar hinzugefügt werden können. Weitere Ausführungen dazu gibt es 
+                <a href="book-blog.html#feedback-loop" target="_blank">hier</a> im Blog.</p>
+            <p>Zusätzlich zu den oben angesprochenen Dateien zeigt das Blockbild die
+                Verzeichnisse <code>img</code> (für die Rezeptbilder) und <code>thumbs</code> (für die Vorschaubilder). Rezept&shy;bilder
+                und Vorschau&shy;bilder haben den gleichen Datei&shy;namen wie die ent&shy;sprechen&shy;den Rezepte. Dadurch können
+                Rezept&shy;bilder und Vorschau&shy;bilder über den Rezept&shy;namen referenziert werden. Für
+                die Auf&shy;nahme eines Rezept&shy;bildes in das Koch&shy;buch es ist nicht erfor&shy;der&shy;lich, eines
+                der o.a. Tools laufen zu lassen. Zur Auf&shy;nahme eines Vorschau&shy;bildes in das auf der Kategorienseite
+                gezeigte Karussel muss das Tool <code>book-builder.xsl</code> aktiviert werden.</p>
+        </div>
+        <img src="https://storage.googleapis.com/testx.fruschtique.de/crop/Motor.jpg" alt="Motor" class="croppedImageRight"/>
+    </div>
+</main>
+</div>
+      </div>
+   </body>
+</html>

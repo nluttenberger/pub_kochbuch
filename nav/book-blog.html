@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="de">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">       
+       <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1" />
+       <title>Making of …</title>
+              
+       <!-- base -->
+       <base href="file:///C:/Users/nlutt/Documents/Websites/kochbuch/experimental/">
+       <!--<base href="https://kochbuch.fruschtique.de/">--> 
+       <!-- base -->
+              
+       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans" >
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower" >
+       <link rel="stylesheet" href="recipe.css" type="text/css" >
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+       <script src="js/wordcloud2.js"></script>
+       <script src="js/lodash.min.js"></script>
+</head>
+   <body>
+      <div class="boxtainer"><div class="title">
+    <h1>Making of …</h1>
+</div>
+
+<div class="logo">
+    <div>
+        <a href="index.html">
+            <img class="logoImage" src="https://storage.googleapis.com/testx.fruschtique.de/logos/fruschtique%20Logo%20grau%20transparent.png" alt="Logo" title="Kochbuch-Logo">
+        </a>
+    </div>
+    <div>
+        <ul class="nav-top">
+            <!-- eins -->
+            <!-- zwei -->
+            <!-- drei -->
+            <li class="nav-item">
+                <a href="nav/book-toc.html">
+                    <img style="display:inline;" src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-toc.png" alt="Inhaltsverzeichnis" title="Inhaltsverzeichnis">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="nav/cat-tiles-only.html">
+                    <img style="display:inline;" src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-tiles.png" alt="Kachelmenu" title="Kachelmenü">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="nav/index-ingdt.html">
+                    <img style="display:inline;" src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-index-ingredient.png" alt="Zutaten-Index" title="Zutaten-Index">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="nav/index-rcp.html">
+                    <img style="display:inline;" src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-index-rcp.png" alt="Rezept-Index" title="Rezept-Index">
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" style="cursor: pointer; text-decoration: none;">
+                    <img src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-more.png" alt="mehr" title="mehr">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="nav/about_cookbook.html">Über das Kochbuch</a></li>
+                    <li><a href="nav/about_author.html">Über mich</a></li>
+                    <li><a href="nav/book-help.html">Gebrauchsanweisung</a></li>
+                    <li><a href="nav/book-blog.html">Making of …</a></li>
+                    <li><a href="nav/book-versions.html">Versionsgeschichte</a> </li>
+                    <li><a href="nav/book-impressum.html">Impressum</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+         <div class="full">
+            <main style="width: 84%;">
+               <div class="post">
+                  <div class="post-date">2019-09-03</div>
+                  <div class="post-text">
+                     <p style="text-indent: 0;">Über ein Jahr lang hat das Kochbuch treue Dienste geleistet – aber (schnief!) es hat
+                        sich nicht weiterentwickelt. Der Bau des Hauses hat alle Zeit aufgefressen. Nun endlich
+                        sieht es so aus, als ob es ab und an wieder einige zusammenhängende Stunden gibt,
+                        die für das Kochbuch genutzt werden können.</p>
+                     <p>Eigentlich – es gibt kein geheimnisvolleres Wort als "eigentlich" – wollte ich mich
+                        in diesen zusammenhängenden Stunden bevorzugt meinem neuen Projekt "fruschtique graphLab"
+                        widmen, das ich in den beiden vorangehenden Posts ansatzweise beschrieben habe. In
+                        der Tat hat es da auch einigen Fortschritt gegeben, der sogar von Maria mit einiger
+                        Bewunderung zur Kenntnis genommen wurde. Was ich "graphLab" nenne, nennt sie "Böppelbilder",
+                        und Du, liebe Leserin, wirst leider noch ein bisschen darauf warten müssen.</p>
+                     <p>In der Zwischenzeit quäle ich Dich mit einer anderen meiner Marotten: der semantischen
+                        Annotation von Webseiten.</p><img src="https://storage.googleapis.com/testx.fruschtique.de/crop/schemaOrgLogo.png" alt="schema.org Logo" style="margin: 2em;"><p style="text-indent: 0;">Für die semantische Annotation von Webseiten kommt man meiner Meinung nach nicht an
+                        <a href="https://schema.org/" target="_blank">schema.org</a> nicht vorbei. schema.org ist keine formale Ontologie im Sinne einer <a href="https://de.wikipedia.org/wiki/Beschreibungslogik" target="_blank">Beschreibungslogik</a> bzw. im Sinne einer darauf aufbauenden Ontologiesprache wie z.B. <a href="https://de.wikipedia.org/wiki/Web_Ontology_Language" target="_blank">OWL</a>. Am besten könnte man schema.org meiner Meinung nach als <i>kontrolliertes Vokabular zur Beschreibung des Inhalts von Webseiten</i> charakterisieren, kontrolliert von Google und einigen anderen Größen des World Wide
+                        Web. Da Rezepte im WWW keine zu vernachlässigende Rolle spielen, enthält schema.org
+                        eine ausführliche Sammlung von Begriffen, mit denen sich Rezepte beschreiben lassen;
+                        man findet diese Begriffssammlung <a href="https://schema.org/Recipe" target="_blank">hier</a>. (Selbstkritische Randbemerkung: Vielleicht wäre es besser gewesen, wenn auch ich
+                        die schema.org-Begriffe für die Entwicklung meines XML-Schemas für Rezepte verwendet
+                        hätte, möglicherweise unter Einbringung einiger Erweiterungen. Leider habe ich das
+                        nicht getan, und vor einer nachträglichen Umstellung fürchte ich mich erbärmlich.)</p>
+                     <p>Was also ist zu tun? Zwei Aufgaben sind zu erledigen:</p>
+                     <ul>
+                        <li>Zum einen muss ich eine Abbildung zwischen meinen Begriffen und den schema.org-Begriffen
+                           herstellen. Vorweg: Bei vielen Begriffen gelingt das leicht, aber es gibt diverse
+                           Begriffe, die es jeweils nur in der einen "Welt" gibt, in der anderen aber nicht.
+                           Ich habe mich dazu entschieden, nur die offensichtlichen Begriffsabbildungen zu implementieren,
+                           z.B. von <i>recipeIntro</i> (fruschtique) nach <i>description</i> (schema.org). Ich werde dieses Thema im folgenden nicht weiter verfolgen.</li>
+                        <li>Ich muss die gewünschten semantische Annotation in einem geeigneten Format bereitstellen.
+                           Das Quellformat für meine Rezepte ist XML. XML <i>tags</i> (präziser: die <i>tag names</i>) kann man ohne Mühe als semantische Beschreibung der <i>text values</i> derzugehörigen XML-Elemente auffassen. Schema.org sieht für die semantische Annotation
+                           von HTML-codierten Rezepten eines dieser drei Non-XML-Formate vor: microdata, RDFa
+                           oder JSON-LD. Es wird also eine Umcodierung der in den Rezeptdaten enthaltenen semantischen
+                           Informationen vom XML-Format in eines der drei genannten Formate benötigt. Ich habe
+                           mich für <a href="https://json-ld.org/" target="_blank">JSON-LD</a> entschieden (die <i>JavaScript Object Notation for Linking Data</i>), da hier HTML-codierter Rezepttext und semantische Annotation klar voneinander getrennt
+                           werden.</li>
+                     </ul>
+                     <p style="text-indent: 0;">Nun können wir die Aufgabe präzise beschreiben: Es besteht die Aufgabe, den <i>text value</i> derjenigen XML-Elemente, für deren <i>tags</i> es eine Entsprechung in der Begriffswelt von schema.org/recipe gibt, unter Verwendung
+                        der schema.org-Begriffe in das JSON-LD-Format einzupacken, z.B. in die für JSON typischen
+                        <i>key-value pairs</i> (die im Jargon als <i>map</i> bezeichnet werden). Stark vereinfacht: Die Entsprechung des <i>tag name</i> eines XML-Elements wird zum <i>JSON key</i>, der <i>text value</i> des XML-Elements wird zum <i>JSON value</i>. Der erfahrene XSLT-Programmierer sagt sich: Kein Problem – und krempelt die Ärmel
+                        hoch. Bald darauf stellt er fest: Mit Hilfe eines XSLT-<i>Stylesheet</i> einen Text zu erzeugen, der später als JSON-Dokument mit all den erforderlichen Anführungszeichen,
+                        Klammern und Kommas durchgehen kann, ist nicht lustig – und weder das <i>Stylesheet</i>, noch das resultierende JSON-Dokument sind besonders übersichtlich; von "hübsch"
+                        mag man gar nicht reden.</p>
+                     <p>Also: neue Recherche.</p>
+                     <p>Und: Oh Wunder! XSLT 3.0 schenkt uns eine Funktion <a href="https://www.w3.org/TR/xslt-30/#func-xml-to-json" target="_blank"><code>xml-to-json()</code></a> – und damit sollte es doch ganz leicht gehen!</p>
+                     <p>Doch nichts ist ohne Preis: Die <code>xml-to-json()</code>-Funktion erwartet als XML-Input eine Instanz <a href="https://www.w3.org/TR/xslt-30/#schema-for-json" target="_blank">dieses XML-Schemas</a>. Es hat den <i>target namespace</i><code>http://www.w3.org/2005/xpath-functions</code>, und ist ebenso wie die Spezifikation der <code>xml-to-json()</code>-Funktion in der <a href="https://www.w3.org/TR/xslt-30/#func-xml-to-json" target="_blank"><i>W3C Recommendation: XSL Transformations (XSLT) Version 3.0</i></a> vom 8.6.2017 enthalten. (Naja, dieses Datum sagt mir, dass ich, wenn ich mich bereits
+                        zu der Zeit, als ich das Kochbuch zum ersten Mal veröffentlicht habe, mit der semantischen
+                        Annotation meiner Rezepte beschäftigt hätte, möglicherweise einen Frühschuss getan
+                        hätte.) Das <i>xml-to-json</i>-Input-Format hat leider gar nichts mit meinem Rezept-Schema zu tun. Es ähnelt eher
+                        einer XML-basierten Beschreibung des oben andiskutierten JSON-Formats mit <i>maps</i>, <i>arrays</i> usw.</p>
+                     <p>Der erfahrene XSLT-Programmierer krempelt also zum zweiten Male die Ärmel hoch.</p>
+                     <p>Dieses Mal klappt es. In meinem <i>Stylesheet</i><code>gen_json-ld.xsl</code> befülle ich zunächst eine XSLT-Variable mit einer XML-Baumstruktur, die dem <i>xml-to-json</i>-Schema genügt und die <i>text values</i> der entsprechenden XML-Elemente aufnimmt, und transformiere dann diese Baumstruktur
+                        mit der <code>xml-to-json()</code>-Funktion in das JSON-Format. Das Ergebnis der Transformation ist das gewünschte Output-Dokument.
+                        Das <i>Stylesheet</i><code>gen_json-ld.xsl</code> inkludiere ich in das übergeordnete <i>Stylesheet</i><code>gen_rcp.xsl</code>. Dieses sorgt dafür, dass in den Kopf eines jedes HTML-codierten Rezepts die passende
+                        JSON-LD-codierte semantische Annotation gelangt und in <i>script tags</i> eingeschlossen wird. Das Stylesheet <code>gen_rcp.xsl</code> wird selber wiederum in das Stylesheet <code>book-builder.xsl</code> inkludiert.</p>
+                     <p>War doch gar nicht schwer. Oder?</p>
+                     <p>Selbstverständlich habe ich die von mir erzeugten semantischen Annotationen mit Hilfe
+                        des <a href="https://search.google.com/structured-data/testing-tool" target="_blank">Google-Testtool für strukturierte Daten</a> syntaktisch überprüft.</p>
+                     <p>Aber nun ist doch wirklich alles dafür getan (heul!), dass Google das fruschtique-Kochbuch
+                        mit lauter ersten Plätzen in den Trefferlisten der Rezeptsuche bedenkt! Damit Du,
+                        liebe Leserin, dazu verführt wirst, niemals eine andere Sultanrolle zu kochen als
+                        meine!</p>
+                  </div>
+               </div>
+               <div class="post"><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script><div class="post-date">2018-03-01</div>
+                  <div class="post-text">
+                     <p style="text-indent: 0;">In meinem letzten Post habe ich mir überlegt, wie denn der "ideale" Zutatengraph aussehen
+                        könnte. Das war vielleicht nicht die richtige Frage. Heute würde ich die Frage anders
+                        stellen:</p>
+                     <p>Gibt es eine Kollektion von Zutatengraphen, die geeignet ist, mein Kochbuch zu charakterisieren?</p>
+                     <p>Nach wie vor kann ich nur eine vorläufige Antwort geben, denn zur Erzeugung der Zutatengraphen
+                        verfüge ich immer noch nicht über eine Sammlung aller Zutaten aus allen Rezepten meines
+                        Kochbuchs. Es geht immer noch um die Zutaten der vier Rezepte, die ich im <a href="book-blog.html#graph-intro" target="_blank">Post vom 14.02.2018</a> genannt habe. Der Charme dieses Mankos liegt darin, dass man dank der Datensparsamkeit
+                        einige Dinge klarer sehen kann, als wenn man alle Daten hätte: Erkenntnischance vor
+                        Datensättigung.</p>
+                     <p>Die Frage also ist: Wie kann man einen "großen" Zutatengraphen so in eine Menge von
+                        "kleinen" Zutatengraphen aufteilen, dass einerseits keine Information verlorgen geht,
+                        dass aber andererseits neue Erkenntnisse entstehen? Anders formuliert: Kann ich den
+                        Zutatengraphen geeignet partitionieren? Scheint wie: eine Variante des klassischen
+                        <i>divide and conquer</i>-Problems. </p>
+                     <p>(Für den Ingenieur ist das klassische <i>divide and conquer</i>-Problem ein <b>konstruktives</b> Problem: Wie zerlege ich eine große konstruktive Aufgabe in eine Vielzahl von Detailkonstruktionen?
+                        Im Kontext meines Kochbuchs geht es aber nicht um ein konstruktives, sondern um ein
+                        <b>analytisches</b> Problem: Wie kann ich aus einer Vielzahl von Einzelbeobachtungen (= Teilgraphen)
+                        einen Blick auf das große Ganze gewinnen? Aber solche methodischen Abschweifungen
+                        tun nicht wirklich etwas zur Sache. Oder doch?)</p>
+                     <p>Eine kurze Auseinandersetzung mit der Graphentheorie hilft: Es gibt zwei graphentheoretische
+                        Maße, mit denen man einen Graphen partitionieren kann: die <i>betweenness centrality</i> und die <i>eccentricity</i>. Versuchen wir, das zu klären, und zwar sowohl graphentheoretisch als auch kulinarisch.</p>
+                     <p><i>Betweenness centrality</i>: Stellen wir uns den Graphen als das Streckennetz der Bundesbahn vor; die Knoten
+                        des Graphen repräsentieren die Bahnhöfe. Dann kann man sicherlich die kürzesten Wege
+                        von jedem Bahnhof A zu jedem Bahnhof B ausrechnen. Jeder Weg wird beschrieben durch
+                        eine Folge von Bahnhöfen. Diejenigen Bahnhöfe, durch die die meisten dieser kürzesten
+                        Wege gehen, haben die höchste <i>betweenness centrality</i>. Anders ausgedrückt: Wenn Du von A nach B willst, dann kommst Du mit Sicherheit an
+                        einem dieser Bahnhöfe vorbei. Kulinarisch formuliert: Es gibt einige Zutaten, an denen
+                        man beim Kochen nicht vorbeikommt. Pfeffer und Salz gehören dazu; sie können ruhig
+                        auf der Einkaufsliste fehlen, da man sie immer vorrätig haben muss. (Wehe, wenn nicht!)
+                        Es gibt andere Zutaten, die braucht man auf jeden Fall für eine bestimmte Art von
+                        Gerichten: Für eine gute Brühe braucht man Sellerie, egal ob es sich um eine Gemüsebrühe
+                        oder eine Fleischbrühe handelt. Wenn ich also vom Fleisch zum Fenchel (der in jede
+                        gute Gemüsebrühe hineingehört) reisen möchte, dann komme ich beim Sellerie vorbei.</p><img src="https://storage.googleapis.com/testx.fruschtique.de/crop/forFour-gv-between-01.png" alt="graph with high betweenness centrality nodes" title="Graph mit 'high betweenness centrality'-Knoten"><p style="text-indent: 0;">Ich habe also den oben gezeigten Graphen erzeugt, der (bezogen auf die genannten Rezepte)
+                        nur aus solchen Zutatenknoten erzeugt wird, die eine höhere <i>betweenness centrality</i> haben. Wie erwartet ergibt sich - wie schon im vorigen Post - ein partitionierter
+                        Graph: Ein Teilgraph zeigt die Zutaten, die sowohl in der Tomatensuppe als auch in
+                        der Tomatensauce enthalten sind; der andere Teilgraph zeigt die Zutaten, die sowohl
+                        in den Gnocchi als auch in den Blini enthalten sind. Man könnte sagen: Bei diesen
+                        Zutaten hat der Koch keine Wahl: Diese Zutaten gehören unbedingt in ein Tomaten-Rezept
+                        hinein bzw. in ein Rezept für Beilagen auf Weizenmehlbasis.</p>
+                     <p>Weiter im Text.</p>
+                     <p><i>Eccentricity</i>:Wieder stellen wir uns den Graphen als das Streckennetz der Bundesbahn vor. Dieses
+                        Mal wollen wir zu den entlegenen Destinationen dieses Netzes fahren. "Entlegen" heißt
+                        hier: Wir suchen die längsten Wege im Netz, d.h. diejenigen Wege, auf denen man die
+                        größte Anzahl an Knoten passieren muss, wenn man von einem Knoten A zu einem Knoten
+                        B reisen will. Wir schließen dabei selbstverständlich aus, dass man im Kreise fährt,
+                        oder dass wir irgendeinen kürzeren Weg von A nach B übersehen haben. Die Endpunkte
+                        eines solchen Weges haben eine hohe <i>eccentricity</i>. Kulinarisch formuliert: Exzentrische Zutaten kommen in nur einem einzigen oder in
+                        nur sehr wenigen Rezepten vor; sie veredeln den "Stampf", den sie mit anderen Rezepten
+                        teilen, zu einer eigenständigen, genusswürdigen Speise.</p><img src="https://storage.googleapis.com/testx.fruschtique.de/crop/forFour-gv-eccentric-01.png" alt="graph with high eccentricity nodes" title="Graph mit 'high eccentricity'-Knoten"><p style="text-indent: 0;">Nach der Wahl geeigneter Werte für die <i>eccentricity</i> zeigt der resultierende Graph ein Netz mit vier Partitionen. Jede Partition steht
+                        für eins der vier Rezepte, die ich in die Analyse einbezogen habe. Eine solche Partition
+                        zeigt diejenigen Zutaten, die nur im jeweiligen Rezept vorkommen. Von links oben nach
+                        rechts unten: Tomatensuppe, Gnocchi, Blini, Tomatensauce.</p>
+                     <p>Würde man alle in den beiden Bildern dieses Posts gezeigten Partitionen geschickt
+                        "zusammenbasteln", könnte man den Graphen rekonstruieren, den ich im vorigen Post
+                        gezeigt habe. Und das finde ich sehr spannend.</p>
+                     <p>Ich zitiere jetzt mal für alle, die's ganz genau wissen wollen, <a href="http://reference.wolfram.com/language/ref/BetweennessCentrality.html" target="_blank">Wolfram: </a> "<b>BetweennessCentrality</b> will give high centralities to vertices that are on many shortest paths of other
+                        vertex pairs. BetweennessCentrality for a vertex \(i\) in a connected graph is given
+                        by \(\sum_{s,t \in V \land s\neq i \land t\neq i} \big({n_{s,t}^i} \big/ {n_{s,t}}\big),\)
+                        where \(n_{s,t}\) is the number of shortest paths from \(s\) to \(t\) and \(n_{s,t}^i\)
+                        is the number of shortest paths from \(s\) to \(t\) passing through \(i\). The ratio
+                        \({n_{s,t}^i} \big/ {n_{s,t}}\) is taken to be zero when there is no path from \(s\)
+                        to \(t\)."</p>
+                     <p>Und weiter: "The <b>eccentricity</b> \(\epsilon(\nu)\) of a graph vertex \(\nu\) in a connected graph \(G\) is the maximum
+                        graph distance between \(\nu\) and any other vertex \(\upsilon\) of \(G\). For a disconnected
+                        graph, all vertices are defined to have infinite eccentricity (West 2000, p. 71)."
+                        (<a href="http://mathworld.wolfram.com/GraphEccentricity.html" target="_blank">Weisstein, Eric W. "Graph Eccentricity."</a> From MathWorld - A Wolfram Web Resource.)</p>
+                  </div>
+               </div>
+               <div class="post">
+                  <div class="post-date">2018-02-20</div>
+                  <div class="post-text">
+                     <p style="text-indent: 0;">Um einen Zutatengraphen wie den zuvor gezeigten zu erzeugen, ist leider eine Menge
+                        "Handarbeit" nötig. Dabei geht es vor allem um die normierte Bezeichnung der Zutaten.
+                        Es soll ja nicht sein, dass "Apfel" und "Äpfel" als zwei unterschiedliche Zutaten
+                        angesehen werden. Kulinarisch haben sie ja schließlich die gleiche Bedeutung.</p>
+                     <p>Was habe ich getan?</p>
+                     <p>Ich habe einen Zutatenkatalog entwickelt, der für je Zutat die folgenden Informationen
+                        enthält: ein <i>label</i> (eine normierte Bezeichnung, wie sie im Graphen auftauchen soll) und die Zuordnung
+                        der jeweiligen Zutat zu einer <i>class</i>, d.h. zu einer Zutatenklasse, wie sie auch in dem Zutatengraphen erkennbar ist, den
+                        ich im vorigen Post gezeigt habe. Referenziert wird jeder Katalogeintrag durch einen
+                        eindeutigen <i>identifier</i>. Hier ist ein Beispiel:</p>
+                     <p style="text-indent: 0;"><code style="margin-left: 3em;">&lt;fc:ingredient id="zitrone"&gt;</code><br><code style="margin-left: 5em;">&lt;fc:igtLabel&gt;Zitrone&lt;/fc:igtLabel&gt;</code><br><code style="margin-left: 5em;">&lt;fc:igtClass&gt;fruit&lt;/fc:igtClass&gt;</code><br><code style="margin-left: 3em;">&lt;/fc:ingredient&gt;</code></p>
+                     <p style="text-indent: 0;">Um diesen Zutatenkatalog zu erstellen, habe ich mir alle Zutaten aus allen Rezepten
+                        des fruschtique-Kochbuchs in eine lange Liste schreiben lassen (Danke, Saxon, danke
+                        XSLT!) und diese Liste dann "von Hand" so eingedampft, dass für jede kulinarisch interessante
+                        Zutat genau nur ein Eintrag so wie der gerade gezeigte für den Katalog übrig bleibt.</p>
+                     <p>Wieviele Zutaten der Katalog enthält, möchtest Du nun bestimmt gerne wissen, liebe
+                        Leserin, oder nicht?</p>
+                     <p>Es sind: <b>198</b> Zutaten! Gepriesen sei die Speisekammer!</p>
+                     <p>Aber leider war die Arbeit damit noch nicht fertig!</p>
+                     <p>Nun müssen ja noch die Zutatenlisten der einzelnen Rezepte des fruschtique-Kochbuchs
+                        bearbeitet werden. Wenn in einer Zutatenliste "Zitronen" auftaucht, dann muss irgendwo
+                        stehen, dass es sich hier um eine Zutat handelt, die in normierter Darstellung "Zitrone"
+                        heißt.</p>
+                     <p>Wieder ist computerunterstützte Handarbeit erforderlich: Ich habe das Formular zur
+                        Eingabe von Rezepte um ein Feld je Zutat erweitert, in den ich den o.a. <i>identifier</i> eintragen muss, wenn ich will, dass diese Zutat in einem Zutatengraphen korrekt berücksichtigt
+                        wird.</p>
+                     <p>Damit ich mich bei der Eingabe eines solchen <i>identifier</i> nicht vertippen kann, werden mir beim Tippen Vorschläge gemacht, aus denen ich den
+                        richtigen <i>identifier</i> auswählen kann. Diese Vorschlagsliste wird aus dem Zutatenkatalog automatisch erzeugt.</p>
+                     <p>So, das war jetzt wieder mal genug Nerd-Kram!</p>
+                  </div>
+               </div>
+               <div class="post" id="graph-intro">
+                  <div class="post-date">2018-02-14</div>
+                  <div class="post-text">
+                     <p style="text-indent: 0;">Liebe Leserin, Du wirst bemerkt haben, dass ich mich mehrfach zum Thema <i>food pairing</i> geäußert habe: Es geht um die Frage, welche Zutaten zueinander passen und welche
+                        nicht.</p>
+                     <p>Man kann diese Frage auf viele unterschiedliche Arten und Weisen anpacken. Ich habe
+                        mir die folgende herausgesucht: Ich erstelle für alle Zutaten, die ich in all meinen
+                        Rezepten verwende, einen <i>network graph</i>. Der wird wie folgt gebaut: Die Zutaten werden durch Kreise repräsentiert (in der
+                        Graphentheorie: die Knoten des Graphen), und die Beziehung zwischen zwei Zutaten wird
+                        durch eine Linie repräsentiert (in der Graphentheorie: die Kanten des ungerichteten
+                        Graphen). Eine Beziehung zwischen zwei Zutaten existiert immer dann, wenn es mindestens
+                        ein Rezept in meinem Kochbuch gibt, in dem die beiden Zutaten auftauchen. Aus dem
+                        unten gezeigten Bild kann ich also ableiten, dass es mindestens ein Rezept gibt, in
+                        dem sowohl Estragon als auch Knoblauch verwendet werden, dass es aber kein Rezept
+                        gibt, in dem Estragon <b>und</b> Tonkabohne verwendet werden.</p>
+                     <p>(Im folgenden werde ich die Terminologie <i>Zutatengraph</i>, <i>Zutatenknoten</i> und <i>Kante</i> verwenden.)</p>
+                     <p>Einige weitere Eigenschaften meines Zutatengraphen sind besonders zu erwähnen: Jede
+                        Zutat habe ich einer "Zutatenklasse" zugeordnet: Fleisch, Fisch, Gemüse, Milchprodukte,
+                        Kräuter, Gewürze, sauer, süß usw. Jeder Zutatenklasse habe ich eine Farbe zugeordnet,
+                        und die Farbe eines Zutatenknotens entspricht der Farbe der zugeordneten Klasse (s.
+                        Legende). Die Größe eines Zutatenknotens ist proportional zur Häufigkeit, mit der
+                        die entsprechende Zutat in meinem Rezeptbuch auftaucht ("Prävalenz"). Die Dicke einer
+                        Kante zwischen zwei Zutatenknoten ist proportional zur Anzahl der Rezepte, in denen
+                        diese Zutatenkombination verwendet wird (in der Graphentheorie: das Kantengewicht).
+                        Zur besseren Sichtbarkeit des Kantengewichts färbe ich außerdem die Kante zwischen
+                        zwei Zutatenknoten rot ein, wenn diese Kombination mehr als einmal auftaucht.</p>
+                     <p>Nun habe ich es aus Gründen, die später dargestellt werden, noch nicht geschafft,
+                        alle Zutaten bzw. Zutatenpaare zu ermitteln. Das Bild zeigt nur ein erstes Ergebnis;
+                        dafür habe ich nur vier Rezepte ausgewertet.</p>
+                     <div style="display: flex">
+                        <div><img src="https://storage.googleapis.com/testx.fruschtique.de/crop/forFour-gv-01.png" alt="ingredient graph for 4 recipes" title="ingredient graph"></div>
+                        <div>
+                           <table style="background-color: white">
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <div style="background: #6B8E23; width: 50px; height: 16px"></div>
+                                    </td>
+                                    <td>Frucht</td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div style="background: #CD5C5C; width: 50px; height: 16px"></div>
+                                    </td>
+                                    <td>Fleisch</td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div style="background: #B8860B; width: 50px; height: 16px"></div>
+                                    </td>
+                                    <td>Brühe</td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div style="background: #5F9EA0; width: 50px; height: 16px"></div>
+                                    </td>
+                                    <td>Zubereitung</td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div style="background: #FF6347; width: 50px; height: 16px"></div>
+                                    </td>
+                                    <td>Gewürz</td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div style="background: #D2691E; width: 50px; height: 16px"></div>
+                                    </td>
+                                    <td>Nüsse</td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div style="background: #FA8072; width: 50px; height: 16px"></div>
+                                    </td>
+                                    <td>süß</td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div style="background: #DAA520; width: 50px; height: 16px"></div>
+                                    </td>
+                                    <td>Kräuter</td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div style="background: #9ACD32; width: 50px; height: 16px"></div>
+                                    </td>
+                                    <td>Gemüse</td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div style="background: #FFA500; width: 50px; height: 16px"></div>
+                                    </td>
+                                    <td>Ei</td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div style="background: #DEB887; width: 50px; height: 16px"></div>
+                                    </td>
+                                    <td>Kohlenhydrate</td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div style="background: #FFD700; width: 50px; height: 16px"></div>
+                                    </td>
+                                    <td>Zwiebel</td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div style="background: #FFC0CB; width: 50px; height: 16px"></div>
+                                    </td>
+                                    <td>Fisch</td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div style="background: #FFFF00; width: 50px; height: 16px"></div>
+                                    </td>
+                                    <td>sauer</td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div style="background: #E6E6FA; width: 50px; height: 16px"></div>
+                                    </td>
+                                    <td>Milch</td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div style="background: #FFE4C4; width: 50px; height: 16px"></div>
+                                    </td>
+                                    <td>Fett</td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div style="background: #F5F5F5; width: 50px; height: 16px"></div>
+                                    </td>
+                                    <td>etc</td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <div style="background: #F0F8FF; width: 50px; height: 16px"></div>
+                                    </td>
+                                    <td>Alkohol</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <p style="text-indent: 0;">Das Ergebnis dieser ersten Auswertung war für mich auf den ersten Blick überraschend
+                        (auf den zweiten Blick nicht, denn ich kenne ja meine Rezepte): Der Zutatengraph für
+                        diese vier Rezepte ist partitioniert, d.h. er zerfällt in zwei Teilgraphen, die keinen
+                        einzigen gemeinsamen Knoten (keine einzige gemeinsame Zutat) haben. Oder anders formuliert:
+                        Es gibt keine Zutat, die sowohl in den Rezepten des oberen Teilgraphen als auch in
+                        den Rezepten des unteren Teilgraphen verwendet wird. Naja, das ist ja auch kein Wunder,
+                        wenn man sich die Rezepte anschaut, die ich ausgewertet habe: <a href="http://kochbuch.fruschtique.de/recipes/Tomatensuppe.html" target="_blank">Tomatensuppe</a>, <a href="http://kochbuch.fruschtique.de/recipes/Tomatensauce.html" target="_blank">Tomatensauce</a>, <a href="http://kochbuch.fruschtique.de/recipes/Blini.html" target="_blank">Blini</a> und <a href="http://kochbuch.fruschtique.de/recipes/Gnocchi%20fruchtig.html" target="_blank">Gnocchi fruchtig</a>. Ganz offensichtlich repräsentiert der obere Teilgraph die Blini und die Gnocchi,
+                        während der untere Teilgraph die Tomatensuppe und die Tomatensauce repräsentiert.</p>
+                     <p>Maria würde allerdings sofort erkennen, dass das so nicht genau stimmt. Denn: Liest
+                        man sich die Zutatenlisten durch, so sieht man, dass in allen vier Rezepten "Öl" (Olivenöl)
+                        verwendet wird. Also hätte doch eine Beziehung zwischen dem oberen und dem unteren
+                        Teilgraphen über einen Zutatenknoten für "Öl" bestehen müssen! Und warum ist diese
+                        Beziehung nicht da?</p>
+                     <p>Ich habe mich entschieden, für die Erstellung des Zutatengraphen die Zutat "Öl" <b>nicht</b> zu berücksichtigen. Öl ist (wenn man von Süßspeisen bzw. speziell parfümierten Ölen
+                        absieht) eine Allerweltszutat, deren Auftauchen keine neuen Erkenntnisse zum Thema
+                        <i>food pairing</i> bringt. Ebenso habe ich Salz und Pfeffer weggelassen, weil diese in so gut wie allen
+                        Rezepten auftauchen. Außerdem habe ich alle Trieb- und Verdickungshilfmittel wie z.B.
+                        Hefe, Backpulver, Johannisbrotkernmehl weggelassen: Diese tragen bei richtiger Anwendung
+                        nichts zum Geschmack bei. Wenn ich alle Rezepte auswerte, werde ich mich wahrscheinlich
+                        entscheiden müssen, noch weitere Zutaten von der Auswertung auszuschließen, da der
+                        Zutatengraph wahrscheinlich sonst zu unübersichtlich wird. Wir werden sehen.</p>
+                     <p>Bleibt nun noch die entscheidende Frage: Wie sieht der "ideale" Zutatengraph aus?
+                        Vielleicht kommt der Antwort näher, wenn man zwei Extreme betrachtet: Alle Zutaten
+                        sind mit allen anderen Zutaten verbunden. Oder: Keine Zutat ist mit keiner andern
+                        verbunden. Im ersten Fall würde alle Zubereitungen (fast) gleich schmecken, da nur
+                        Mengenvariationen einen Geschmacksunterschied bewirken können. Der zweite Fall ist
+                        nicht wirklich diskutierbar: Kann man sich ein Rezept vorstellen, in dem "Mehl" die
+                        einzige Zutat ist?</p>
+                     <p>Das hat uns eine Antwort auf die gestellte Frage noch nicht wirklich nähergebracht.
+                        Ein neuer Versuch ist nötig.</p>
+                     <p>Wir starten wieder mit einer Frage: Gibt es Zutaten, die nur in einem einzigen Rezept
+                        auftauchen? Ich denke hier an Nelken: Ich kenne Nelken vor allem in Verbindung mit
+                        Rotkohl. Im Zutatengraphen würde man (wenn es kein anderes Rezept mit Nelken gibt)
+                        sehen, dass alle Kantengewichte der von "Nelke" ausgehenden Linien = 1 sind.</p>
+                     <p>Aus der Beobachtung solcher Fälle könnte man ableiten, dass hier vielleicht eine Chance
+                        für ein neues ungewöhnliches <i>food pairing</i> besteht. Könnte man sich z.B. ein Rezept vorstellen, in dem Nelken mit Honig kombiniert
+                        werden? Bestimmt. Aber auch eine andere Schlußfolgerung kann man treffen: Wenn es
+                        viele solche Zutaten gibt, die nur in einem Rezept auftauchen, dann verspricht das
+                        Kochbuch eine abwechslungsreiche Küche, da jedes Rezept seine eigene Note hat. (Allerdings
+                        wird die Vorratswirtschaft dadurch nicht einfacher.)</p>
+                     <p>Aus dem Gesagten folgt, dass der Zutatengraph noch viel Spielraum für weitergehende
+                        Analysen bietet. Ich werde mich also mit der Analyse "sozialer Beziehungen" zwischen
+                        Kochzutaten beschäftigen müssen. Um meine Rezepte besser zu verstehen. Na, wer hätte
+                        das gedacht!</p>
+                     <p>Das Layout des Graphen folgt dem Paradigma des <a href="http://philogb.github.io/blog/2009/09/30/force-directed-layouts/" target="_blank"><i>force-directed graph</i></a> und wurde mit Hilfe des Pakets <a href="https://www.graphviz.org/" target="_blank">GraphViz</a> erstellt.</p>
+                     <p>In einem nächsten Post werde ich mich mit der Aufbereitung meiner Rezeptdaten beschäftigen.
+                        Und bald schon werde ich eine neue Seite in mein Kochbuch aufnehmen, auf der einige
+                        Zutatengraphen gezeigt werden.</p>
+                  </div>
+               </div>
+               <div class="post" id="wordcloud">
+                  <div class="post-date">2018-02-01</div>
+                  <div class="post-text">
+                     <p style="text-indent: 0;">Wie ausführlich <a href="about_cookbook.html#software" target="_blank">hier</a> begründet, habe ich mich ja entschieden, mein Kochbuch als Sammlung statischer HTML-Seiten
+                        zu veröffentlichen. Statische HTML-Seiten? Das klingt, als ob auf den Seiten nix los
+                        wäre. Schrecklich. Naja, immerhin habe ich ja etwas Dynamik in die Rezeptseiten hineingesteckt:
+                        Der Rezepttext entfaltet sich per Click in einer sehr netten Animation. Aber: Reicht
+                        das an Dynamik?</p>
+                     <p>Ich habe mir gedacht, dass es im Kochbuch eine Stelle gibt, an der ich "Dynamik" und
+                        "Vereinfachung des Workflow" geschickt miteinander verbinden kann. Es geht um die
+                        Deckblätter für die elf Kapitel des Kochbuchs.</p>
+                     <p>Der zunächst vorgesehene Workflow sah vor, dass die Schlüsselworte aus allen Rezepten
+                        eines Kapitels in einer kapitelbezogenen Datei zusammengetragen wurden, dass ich mit
+                        diesen Schlüsselwort-Dateien im Gepäck auf <a href="https://www.wordclouds.com/" target="_blank">diese Website</a> gehe, mir dort die <i>word clouds</i> erzeugen lasse, die ich für die Kapiteldeckblätter benötige, und diese <i>word clouds</i> dann als png-Dateien herunterlade. Oh Mann! Was für ein Aufwand für ein Schmuckelement!
+                        Ein Aufwand, den ich bei jeder Änderung, jedem Löschen und jedem Hinzufügen eines
+                        Schlüsselworts hätte treiben müssen. Keine gute Idee.</p>
+                     <p>Die Idee: Ich packe die Schlüsselwortlisten in die Deckblattseiten hinein und lasse
+                        die <i>word clouds</i> dynamisch durch ein js-Script erzeugen, das ebenfalls auf der Deckblattseite zur
+                        Verfügung gestellt wird. Keine lange Suche und ein solches js-Script war <a href="https://timdream.org/wordcloud2.js/" target="_blank">hier</a> gefunden. Dieses Script erzeugt eine <i>word cloud</i> auf einem HTML <code>canvas</code>.</p>
+                     <p>Naja, bei der Erstellung der Schlüsselwortlisten war noch ein bisschen Trickserei
+                        erforderlich: Es mussten ja nicht nur die Schlüsselworte aus den Rezepten extrahiert
+                        werden, sondern es musste auch noch eine Häufigkeitsinformation zu jedem Schlüsselwort
+                        hinzugefügt werden. Dank des xslt-Konstrukts <code>for-each-group</code> war der Aufwand dafür allerdings bescheiden. Das Result: Dynamik! Jedes Mal, wenn
+                        Du, liebe Leserin, den <i>refresh</i>-Knopf des Browsers (↻) drückst, erscheint eine neue <i>word cloud</i>. Das ist doch sehr hübsch.</p>
+                     <p>Aber dann!</p>
+                     <p>Aber dann hat mich ein kleiner Teufel geritten. Was musst Du tun, hat mich der kleine
+                        Flausen-Teufel gefragt, damit sich die <i>word cloud</i> dynamisch an die Größe des zur Verfügung gestellten <code>canvas</code> anpasst? Will sagen: Die Größe der <i>word cloud</i> wird nicht nur beim Laden der Seite festgelegt, sondern auch, wenn die Größe einer
+                        bereits geladenen Seite durch Benutzereingriff geändert wird. So wie hier:</p><img src="https://storage.googleapis.com/testx.fruschtique.de/workflows/resizing.gif" alt="resizing"><p style="text-indent: 0;">Das Prinzip ist klar: Das <i>word cloud</i>-Script muss bei jeder Größenänderung neu aktiviert werden. Das kriegt man hin, wenn
+                        man das Script auf die entsprechenden js <code>events</code> reagieren lässt. Aber kann man das so 1:1 umsetzen? Bei jeder Mausbewegung werden
+                        schließlich viele, viele, viele Größenänderungen bewirkt.</p>
+                     <p>Nach einigem Suchen habe ich auch für dieses Problem eine Lösung gefunden: das js-Script
+                        <code>debounce</code> aus der js-Bibliothek <a href="https://lodash.com/" target="_blank">lodash</a>.</p>
+                     <p>Nach dem Zusammenbasteln der beiden js-Scripte hat sich das dynamische Verhalten eingestellt,
+                        das ich mir für meine Seiten gewünscht habe. Happy viewing!</p>
+                  </div>
+               </div>
+               <div class="post" id="feedback-loop"><a></a><div class="post-date">2017-11-30</div>
+                  <div class="post-text">
+                     <p>Die fruschtique-Rezeptseiten gibt es in zwei unterschiedlichen Ansichten: <i>view-only</i> und <i>form</i>. Beide Ansichten werden aus dem XML-Code für das jeweilige Rezept, der im Verzeichnis
+                        <code>recipes_xml</code> abgespeichert ist, durch das Transformationsscript <code>gen_pages-rcp.xsl</code> erzeugt. Für die Validierung des XML-Codes gibt es ein XML Schema mit dem Namen <code>recipe.xsd</code>; der <i>namespace</i> ist <code>http://fruschtique.de/ns/recipe</code>, als Präfix verwende ich <code>fr</code>.</p>
+                     <p>Die <i>form</i>-Ansicht erlaubt es der Benutzerin, das dargestellte Rezept zu verändern oder ein
+                        neues Rezept einzugeben. Die Formulareingabe wird durch diverse js-Funktionen verarbeitet,
+                        die in Formularseiten eingebettet sind. Insbesondere wird der Formular-Input durch
+                        die js-Funktion <code>save</code> in einen XML-Baum konvertiert, serialisiert und im Download-Ordner als XML-Datei
+                        abgespeichert.</p><img src="https://storage.googleapis.com/testx.fruschtique.de/workflows/workflow-03.PNG" alt="workflow" title="workflow"><p style="text-indent: 0;">Das Bild zeigt den Knackepunkt: Auch nach einer Bearbeitung durch die Benutzerin bzw.
+                        durch die angesprochene js-Funktion <code>save</code> soll die Rezeptdatei immer noch Schema-valide sein. Mit anderen Worten: Die Schema-Validität
+                        der Rezeptdateien soll auch nach einer Rezeptbearbeitung gegeben sein.</p>
+                     <p>Man könnte meinen, sich die genannte js-Funktion <code>save</code> leicht so schreiben lässt, dass ein Schema-valider Output erzeugt wird. Wo also liegt
+                        das Problem? </p>
+                     <p>In den XML-codierten Rezeptdateien werden nicht nur <i>tags</i> aus dem <code>fr</code>-<i>namespace</i> verwendet, sondern auch <i>tags</i> aus dem <i>namespace</i><code>http://www.w3.org/1999/xhtml</code>, hier mit dem Präfix <code>ht</code> bezeichnet. Zum Glück gibt es diese offizielle Abbildung der XHTML-DTD auf ein XML-Schema,
+                        sonst könnte ich die von mir genutzten HTML-<i>tags</i> wie z.B. &lt;i&gt; und &lt;a&gt; nicht in den XML-codierten Rezepten verwenden.</p>
+                     <p>Um die Validität eines XML-codierten Rezepts zu etablieren, wird es sowohl gegen mein
+                        Rezept-Schema als auch gegen das XHTML-Schema validiert. Um diese Validierung zu ermöglichen,
+                        muss ich die beiden <i>namespaces</i> im Rezepttext erkennbar machen. Das sieht dann z.B. so aus:</p>
+                     <p><code>&lt;fr:introText&gt;Mirepoix verwende ich z.B. beim &lt;ht:a href="Chili%20con%20carne.html"&gt;Chili
+                           con carne&lt;/ht:a&gt;. &lt;/fr:introText&gt;</code></p>
+                     <p>Wenn ich den Text, der in <code>&lt;fr:introText&gt;</code> … <code>&lt;/fr:introText&gt;</code> eingeschlossen ist, unverändert in ein Formularfeld übernehmen würde, könnte der
+                        Rezeptautor, der vielleicht nur ein bisschen HTML versteht, nichts damit anfangen.
+                        Also muss mindestens der Präfix <code>ht:</code> "abgestreift" werden, bevor das Formularfeld angezeigt werden kann. </p>
+                     <p>Stellen wir uns nun also vor, dass wir in einigen Feldern eines Rezeptformulars <code>&lt;i&gt;</code> und/oder <code>&lt;a&gt;</code><i>tags</i> verwenden haben und nun unser Rezept in das XML-Format re-konvertieren und herunterladen
+                        wollen. Ganz unabhängig von der js-Funktion <code>save</code> würde JavaScript die spitzen Klammern, die es in einem <i>string</i> findet, vor dem Herunterladen durch die <i>entities</i><code>&amp;lt;</code> bzw. <code>&amp;gt;</code> ersetzen. Damit ist aber die Schema-Validierung der heruntergeladenen XML-codierten
+                        Rezepte müßig geworden, da die entsprechenden XHTML-Elemente nicht erkannt werden.
+                        Also muss ich in der js-Funktion <code>save</code> die <i>entities</i><code>&amp;lt;</code> bzw. <code>&amp;gt;</code> wieder durch spitze Klammern ersetzen und außerdem das <i>namespace</i>-Präfix <code>ht:</code> hinzufügen. </p>
+                     <p>Gerade eben habe ich ganz lässig behauptet, dass der Präfix <code>ht:</code> "abgestreift" werden müsse, wenn man Text in ein Formularfeld übernehmen will. Das
+                        ist leicht, wenn es sich beim Formularfeld um eine HTML <code>textarea</code> handelt: In diesem Fall wird der anzuzeigende Text in die <code>textarea</code><i>tags</i> eingeschlossen. Bei einem HTML <code>input</code>-Element wird der anzuzeigende Text jedoch als Wert des <code>value</code>-Attributs übergeben. Man müsste also spitze Klammern in einen Attributwert hineinschreiben.
+                        Da macht XSLT nicht mit. Mir blieb nichts anderes übrig, als eine js-Funktion zu schreiben,
+                        die <code>onload</code> den entsprechenden Attribut-Wert schreibt. </p>
+                     <p>In Summe führen alle diese Tricks dazu, dass die XML-codierten Texte auch nach einem
+                        Durchgang durch eine Formularbearbeitung Schema-valide sind.</p>
+                  </div>
+               </div>
+               <div class="post">
+                  <div class="post-date">2017-11-15</div>
+                  <div class="post-text">
+                     <p>In diesem Post werde ich die Punkte 3 - 5 des Vorgehensmodells, das ich im vorigen
+                        Post vorgestellt habe, zusammenfassend diskutieren, nämlich <i>Create a grid container, Calculate column-width, Determine gutter positions</i>.</p>
+                     <p>Ich habe einen <i>grid container</i> definiert und ihn <code>boxtainer</code> genannt, ein <i>container</i> für <i>grid boxes</i>.</p>
+                     <p>Den <code>boxtainer</code> habe ich nicht in regelmäßige Spalten aufgeteilt. Ich habe mir vielmehr einige Flächen"typen"
+                        definert, die recht gut die Aufteilung der unterschiedlichen Seitentypen des Kochbuchs
+                        wiedergeben:</p>
+                     <ul>
+                        <li>Es gibt Flächen, die die zur Verfügung stehende Seitenbreite voll ausnutzen; Klasse
+                           <code>.full</code>.</li>
+                        <li>Es gibt breite Flächen links; Klasse <code>.l-big</code>.</li>
+                        <li>Es gibt schmale Flächen rechts; Klasse <code>.r-small</code>.</li>
+                        <li>Es gibt breite Flächen rechts; Klasse <code>.r-big</code>.</li>
+                        <li>Es gibt schmale Flächen links; Klasse <code>.l-small</code>.</li>
+                        <li>Es gibt eine Fläche für das fruschtique-Logo; Klasse <code>.logo</code>.</li>
+                        <li>Es gibt eine Fläche für den Seitentitel; Klasse <code>.title</code>.</li>
+                     </ul>
+                     <p style="text-indent: 0">Hinzu kommen ggf. noch leere Flächen, die im <code>grid-template</code> durch <code>.</code> codiert werden.</p>
+                     <p>Die Vorstellung ist, dass</p>
+                     <ul>
+                        <li>Flächen der Klasse <code>.full</code> nur mit leeren Flächen links und rechts kombiniert werden sollen (aber nicht müssen),</li>
+                        <li>Flächen der Klasse <code>.r-small</code> nur mit Flächen der Klasse <code>.l-big</code> und ggf. leeren Flächen (links, rechts und/oder dazwischen) kombiniert werden sollen,</li>
+                        <li>Flächen der Klasse <code>.l-small</code> nur mit Flächen der Klasse <code>.r-big</code> und ggf. leeren Flächen (links, rechts und/oder dazwischen) kombiniert werden sollen,</li>
+                        <li>Flächen der Klasse <code>.logo</code> und Flächen der Klasse <code>.title</code> sollen entweder die gesamte Breite einnehmen, oder es soll dazwischen eine leere
+                           Fläche eingebaut werden.</li>
+                     </ul>
+                     <p style="text-indent: 0">Mit den genannten Klassen zeichne ich die diversen Elemente der unterschiedlichen
+                        Seiten aus. Ich erläutere hier nur die Rezeptseiten:</p>
+                     <ul>
+                        <li>Das fruschtique-Logo und das darunter angeordnete Menü gehören zur Klasse <code>.logo</code>.</li>
+                        <li>Der Rezeptname gehört zur Klasse <code>.title</code>.</li>
+                        <li>Das Rezeptbild gehört zur Klasse <code>.l-big</code>.</li>
+                        <li>Der gesamte Rezepttext gehört zur Klasse <code>.r-small</code>.</li>
+                     </ul>
+                     <p style="text-indent: 0">Je nach Gerätetype weise ich diesen Klassen und den zusätzlichen leeren Flächen eine
+                        bestimmte Anzahl von <i>fractions</i> oder Pixeln zu. Ich zähle die unterschiedlichen Aufteilungen in Richtung von <i>small</i> nach <i>big</i> auf:</p>
+                     <ul>
+                        <li>Mindestbreite 280px: Allen Klassen wird eine Fläche mit einer Breite von <code>1fr</code>zugewiesen, d.h. alle klassifizierten Elemente nehmen die volle Seitenbreite ein.</li>
+                        <li>Mindestbreite 480px: Die Breite der Seite wird in 12 <code>fractions</code> im Verhältnis 5:2:5 aufgeteilt; zwischen <code>.title</code>- und <code>.logo</code>-Fläche wird eine leere Fläche eingeschoben; <code>.l-big</code>- und <code>.r-small</code>-Flächen haben ein Breitenverhältnis von 7:5; links und rechts davon gibt es keine
+                           leeren Flächen.</li>
+                        <li>Mindestbreite 800px: Die Flächenaufteilung bleibt erhalten, zusätzlich werden links
+                           und rechts leere Flächen mit fester Breite von 8px vorgesehen.</li>
+                        <li>Mindestbreite 1400px: Die Breite der Seite wird von links nach rechts wie folgt aufgeteilt:
+                           Leere Fläche mit automatischer Breite/600px/200px/600px/leere Fläche mit automatischer
+                           Breite. Die Aufteilung der Flächen mit fester Breite erfolgt nach dem gleichen Strickmuster
+                           wie oben. </li>
+                     </ul>
+                     <p style="text-indent: 0"></p>
+                  </div>
+               </div>
+               <div class="post">
+                  <div class="post-date">2017-10-30</div>
+                  <div class="post-text">
+                     <p>So, jetzt geht's los mit der Implementierung einer Version des Kochbuchs, die nach
+                        den Regeln des <i>responsive design</i> gestaltet ist.</p>
+                     <p><a href="https://zellwk.com/blog/responsive-grid-system/" target="_blank">Hier</a> habe ich unter der Überschrift <i>Building your grid system</i> ein für mich plausibles Vorgehensmodell gefunden. Es schlägt die folgenden acht Schritte
+                        vor: </p>
+                     <ol>
+                        <li>Choose a spec to create your grid with</li>
+                        <li>Set <code>box-sizing</code> to <code>border-box</code></li>
+                        <li>Create a grid container</li>
+                        <li>Calculate column-width</li>
+                        <li>Determine gutter positions</li>
+                        <li>Create a debug grid</li>
+                        <li>Make layout variations</li>
+                        <li>Make your layouts responsive</li>
+                     </ol>
+                     <p style="text-indent: 0;">Mein Kochbuch soll über Chrome, Firefox und Edge nutzbar sein. Chrome und Firefox
+                        unterstützen CSS Grids schon seit einiger Zeit. Endlich unterstützt nun auch die allerneuste
+                        Version von MS Edge, die im Creators Update von Windows 10 enthalten ist, alle Features
+                        von CSS Grids, wie <a href="https://docs.microsoft.com/en-us/microsoft-edge/dev-guide/css/grid-layout#css-grid-layout-properties-supported-in-microsoft-edge" target="_blank">hier</a> berichtet wird. Deshalb habe ich mich entschlossen, mein responsives Kochbuch mit
+                        CSS Grids zu implementieren. Damit ich den Punkt 1 meiner Vorgehensweise abgehakt.</p>
+                     <p>Punkt 2 ist eine Zeile Code. Das werde ich nicht weiter diskutieren.</p>
+                     <p>Bevor ich die folgenden Punkte diskutiere, schiebe ich ein paar Vorüberlegungen ein.</p>
+                     <p>Für alle Kochbuchseiten werde ich Grids für die folgenden Geräte-Typen entwickeln
+                        (Angaben in [css-px]:</p>
+                     <ol>
+                        <li><code>min-width: 280px</code>:<br> Smartphones im <i>portrait mode</i></li>
+                        <li><code>min-width: 480px</code>:<br> Smartphones im <i>landscape mode</i> und Tablets im <i>portrait mode</i></li>
+                        <li><code>min-width: 800px</code>:<br> Tablets im <i>landscape mode</i></li>
+                        <li><code>min-width: 1400px</code>:<br> Desktops</li>
+                     </ol>
+                     <p style="text-indent: 0;">Achtung beim Aufschreiben der css-Anweisungen! Ich werde mich an das Muster <i>mobile first</i> halten, und ich werde in den <code>@media</code>-Abfragen, die zur Erzeugung eines responsiven Verhaltens erforderlich sind, mit den
+                        oben dargestellten <code>min-width</code>-Bedingungen arbeiten. Diese beiden Dinge zusammengenommen haben mindestens zwei Implikationen:</p>
+                     <ol>
+                        <li>Alle css-Anweisungen, die <b>nicht</b> durch eine <code>@media</code>-Abfrage modifiziert sind, werden für das "kleinste" Gerät ausgelegt. Deshalb gibt
+                           es in meiner <code>recipe.css</code>-Datei z.B. die css-Anweisung <code>.croppedImageRight {display: none;}</code>, mit der verhindert wird, dass auf den Seiten <code>about me</code> und <code>about cookbook</code> "Schmuckbilder" angezeigt werden. Diese Bilder sollen nur auf größeren Bildschirmen
+                           widergegeben werden.</li>
+                        <li>Da der Browser die css-Anweisungen in der Reihenfolge abarbeitet, wie sie aufgeschrieben
+                           sind, und da die zuletzt abgearbeiteten Anweisungen das Aussehen des entsprechenden
+                           HTML-Elements bestimmen, müssen insbesondere die <code>@media</code>-Abfragen in einer bestimmten Reihenfolge aufgeschrieben werden. Bei der Kombination
+                           des Paradigmas <i>mobile first</i> mit <code>min -width</code>-Abfragen muss man die <code>@media</code>-Abfragen zwingend in der Reihenfolge "von klein nach groß" aufschreiben. Würde man
+                           die css-Anweisungen in der umgekehrten Reihenfolge aufschreiben, dann würde immer
+                           die css-Anweisung für das kleinste Gerät "gewinnen", da diese als letzte ausgeführt
+                           würde und die entsprechende <code>min-width</code>-Bedingung auch für alle "größeren" Geräte erfüllt ist.</li>
+                     </ol>
+                     <p style="text-indent: 0;">Quintessenz: CSS hat ein bestimmtes <i>processing model</i>, und das ist leider nicht so deklarativ, wie die css-Anweisungen es vielleicht vermuten
+                        lassen. Und wie man es sich vielleicht wünschen würde.</p>
+                     <p>Im nächsten Post werde ich erläutern, wie die Fläche in den verschiedenen Modi aufgeteilt
+                        wird.</p>
+                  </div>
+               </div>
+               <div class="post">
+                  <div class="post-date">2017-10-28</div>
+                  <div class="post-text">
+                     <p>Mein Grau ist <code>rgb(77,77,77)</code>.</p>
+                     <p>Warum?</p>
+                     <p>Weil die Woche 7 Tage hat.</p>
+                     <p>Punkt.</p>
+                  </div>
+               </div>
+               <div class="post">
+                  <div class="post-date">2017-10-27</div>
+                  <div class="post-text">
+                     <p>Bislang habe ich versucht, die Icons, die ich benötige, aus vorhandenen Icon-Sammlungen
+                        zu übernehmen, z.B. von der Site <code>material.io</code>. Keine gute Idee. Es hat sich gezeigt, dass diese Icons schlecht gemacht sind. Das
+                        betrifft nicht die Gestaltung, sondern die technische Umsetzung: Nicht alle dieser
+                        Icons haben einen transparenten Hintergrund. Das Problem dabei: Wenn man Icons ohne
+                        transparenten Hintergrund vor einem weißem Hintergrund zeigt, merkt man nicht, dass
+                        die Icons keinen transparenten, sondern einen weißen Hintergrund haben. Man merkt
+                        das Problem erst, wenn man diese Icons vor einem farbigen Hintergrund zeigt. </p>
+                     <p>Ich habe versucht, die fehlerhaften Icons umzuprogrammieren. Keine gute Idee. Irfanview
+                        versagt, bei Xnview tappt man im Nebel.</p>
+                     <p>Also: Selber Icons erstellen.</p>
+                     <p>Das erwies sich als leichter, als ich erwartet hatte: <a href="https://inkscape.org/de/" target="_blank">Inkscape</a> ist ein perfektes Tool, um Icons zu programmieren. Inkscape liefert Vorlagen in den
+                        für Icons üblichen Größen, z.B. 32 ✕ 32 px<sup>2</sup>, und das Ergebnis lässt sich leicht nach <code>png</code> exportieren. Der Hintergrund ist dabei automatisch transparent.</p>
+                     <p>Also: Keine Angst vor der Erstellung von Icons.</p>
+                  </div>
+               </div>
+               <div class="post">
+                  <div class="post-date">2017-10-25</div>
+                  <div class="post-text">
+                     <p>Jetzt habe ich endlich verstanden, warum einige Leute mein Kochbuch in der Version
+                        4.01 nicht über das Smartphone öffnen können:</p>
+                     <p>Der übliche Smartphone-Benutzer hält sein Gerät im <i>portrait mode</i>, d.h. im Hochformat. In diesem Format zeigt der Smartphone-Bildschirm vom Kochbuch
+                        nur das Logo und den Schriftzug "Das Kochbuch". Dieser Bereich der Bildfläche ist
+                        nicht aktiv, d.h. bei Click passiert nichts. Erst, wenn man das Smartphone ins Querformat
+                        dreht, wird so viel vom Bild sichtbar, dass man in das <b>Bild</b> clicken kann. Dann klappt alles.</p>
+                     <p>Diesen Umstand werde ich bei der nächsten Version berücksichtigen müssen.</p>
+                  </div>
+               </div>
+               <div class="post">
+                  <div class="post-date">2017-10-19</div>
+                  <div class="post-text">
+                     <p>Ich habe eine wunderbare Kollektion von historischen Kochbüchern gefunden:</p>
+                     <p style="line-height: normal; text-indent: 0;"><a href="https://www.greenpeace-magazin.de/warenhaus/produkt/kochtagebuecher" target="_blank">Peter Breuer<br> Kochtagebücher von 1781–1957<br> Greenpeace Magazin Edition</a></p>
+                  </div>
+               </div>
+               <div class="post">
+                  <div class="post-date">2017-10-18</div>
+                  <div class="post-text">
+                     <p>Es ist Zeit, die weitere Entwicklung des Kochbuchs zu planen. Ich denke, für die Weiterentwicklung
+                        der Version <b>4</b> werden folgende Punkte eine Rolle spielen: </p>
+                     <ul>
+                        <li>Eine auch für die Leserin erkennbare Versionierung ist erforderlich. <em>Major</em>: 4, <em>minor</em>: 01, 02 usw. Vielleicht sollte ein Punkt "Version" in das <em>more dropdown</em> aufgenommen werden.</li>
+                        <li>Das Kochbuch muss auf kleinen Bildschirmen besser dargestellt werden: <em>responsive design</em>!</li>
+                        <li>Bei einem kleinen Bildschirm im Hochformat soll nur die Zutatenliste eines Rezepts
+                           dargestellt werden: Einkaufshilfe.</li>
+                        <li>Eine Menge von Rezepten ist inhaltlich zu überarbeiten.</li>
+                        <li>Es fehlen immer noch viele Bilder.</li>
+                        <li>Neue Rezepte sollen aufgenommen werden.</li>
+                        <li>Der Erstellungsprozess muss noch verbessert werden; möglicherweise bedeutet das, dass
+                           ich nur noch mit IntelliJ arbeiten werde und Oxygen aufgebe.</li>
+                     </ul>
+                     <p>Naja, und dann sollte natürlich auch noch eine Version <b>5</b> vorbereitet werden. Ziele:</p>
+                     <ul>
+                        <li>Die Gestaltung des Kochbuchs folgt den <em>Material Design</em>-Regeln.</li>
+                        <li>Das Kochbuch ist nicht nur für den Desktop verfügbar, sondern auch als Android-App.</li>
+                     </ul>
+                     <p>So, mehr schreibe ich jetzt erst einmal nicht.</p>
+                  </div>
+               </div>
+            </main>
+         </div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="de">
+       
+       <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1" />
+       <title>Rezept-Index</title>
+              
+       <!-- base -->
+       <base href="file:///C:/Users/nlutt/Documents/Websites/kochbuch/experimental/">
+       <!--<base href="https://kochbuch.fruschtique.de/">--> 
+       <!-- base -->
+              
+       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans" >
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower" >
+       <link rel="stylesheet" href="recipe.css" type="text/css" >
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+       <script src="js/wordcloud2.js"></script>
+       <script src="js/lodash.min.js"></script>
+
+   <body itemscope="itemscope" itemtype="http://schema.org/ItemList">
+      <div class="boxtainer"><div class="title">
+    <h1>Rezept-Index</h1>
+</div>
+
+<div class="logo">
+    <div>
+        <a href="index.html">
+            <img class="logoImage" src="https://storage.googleapis.com/testx.fruschtique.de/logos/fruschtique%20Logo%20grau%20transparent.png" alt="Logo" title="Kochbuch-Logo">
+        </a>
+    </div>
+    <div>
+        <ul class="nav-top">
+            <!-- eins -->
+            <!-- zwei -->
+            <!-- drei -->
+            <li class="nav-item">
+                <a href="nav/book-toc.html">
+                    <img style="display:inline;" src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-toc.png" alt="Inhaltsverzeichnis" title="Inhaltsverzeichnis">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="nav/cat-tiles-only.html">
+                    <img style="display:inline;" src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-tiles.png" alt="Kachelmenu" title="Kachelmenü">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="nav/index-ingdt.html">
+                    <img style="display:inline;" src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-index-ingredient.png" alt="Zutaten-Index" title="Zutaten-Index">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="nav/index-rcp.html">
+                    <img style="display:inline;" src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-index-rcp.png" alt="Rezept-Index" title="Rezept-Index">
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" style="cursor: pointer; text-decoration: none;">
+                    <img src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-more.png" alt="mehr" title="mehr">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="nav/about_cookbook.html">Über das Kochbuch</a></li>
+                    <li><a href="nav/about_author.html">Über mich</a></li>
+                    <li><a href="nav/book-help.html">Gebrauchsanweisung</a></li>
+                    <li><a href="nav/book-blog.html">Making of …</a></li>
+                    <li><a href="nav/book-versions.html">Versionsgeschichte</a> </li>
+                    <li><a href="nav/book-impressum.html">Impressum</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+         <div class="full col-4">
+            <ul class="index-letter">
+               <li>A
+                  <ul class="ul-triangle">
+                     <li><a href="recipes/07 Vegetarisch/Aloo Tikki %E2%80%93 Kartoffelb%C3%A4llchen indisch.html" target="_blank" style="cursor: pointer;">Aloo Tikki – Kartoffelbällchen indisch</a></li>
+                     <li><a href="recipes/03 Suppen/Ananas-Chili-Suppe mit roten Linsen.html" target="_blank" style="cursor: pointer;">Ananas-Chili-Suppe mit roten Linsen</a></li>
+                     <li><a href="recipes/11 S%C3%BC%C3%9Fes/Apfel-Birnen-Mus mit Sesam.html" target="_blank" style="cursor: pointer;">Apfel-Birnen-Mus mit Sesam</a></li>
+                     <li><a href="recipes/11 S%C3%BC%C3%9Fes/Apfelstrudel.html" target="_blank" style="cursor: pointer;">Apfelstrudel</a></li>
+                     <li><a href="recipes/11 S%C3%BC%C3%9Fes/Apfel-Walnu%C3%9F-Cr%C3%A8me.html" target="_blank" style="cursor: pointer;">Apfel-Walnuß-Crème</a></li>
+                     <li><a href="recipes/02 Vorspeisen/Artischocken.html" target="_blank" style="cursor: pointer;">Artischocken</a></li>
+                     <li><a href="recipes/07 Vegetarisch/Auberginen gegrillt.html" target="_blank" style="cursor: pointer;">Auberginen gegrillt</a></li>
+                     <li><a href="recipes/10 Cr%C3%A8mes und Saucen/Avocado-Cr%C3%A8me.html" target="_blank" style="cursor: pointer;">Avocado-Crème</a></li>
+                  </ul>
+               </li>
+               <li>B
+                  <ul class="ul-triangle">
+                     <li><a href="recipes/02 Vorspeisen/Baba Ganoush.html" target="_blank" style="cursor: pointer;">Baba Ganoush</a></li>
+                     <li><a href="recipes/02 Vorspeisen/Bl%C3%A4tterteig-Sektgeb%C3%A4ck.html" target="_blank" style="cursor: pointer;">Blätterteig-Sektgebäck</a></li>
+                     <li><a href="recipes/08 Beilagen/Blini.html" target="_blank" style="cursor: pointer;">Blini</a></li>
+                     <li><a href="recipes/04 Fleisch/Blutwurst mit Quittenmus.html" target="_blank" style="cursor: pointer;">Blutwurst mit Quittenmus</a></li>
+                     <li><a href="recipes/09 Salate/Bohnensalat wei%C3%9F.html" target="_blank" style="cursor: pointer;">Bohnensalat weiß</a></li>
+                     <li><a href="recipes/03 Suppen/Borschtsch.html" target="_blank" style="cursor: pointer;">Borschtsch</a></li>
+                     <li><a href="recipes/02 Vorspeisen/Bruschette mit Walnusspaste und B%C3%BCffelmozzarella.html" target="_blank" style="cursor: pointer;">Bruschette mit Walnusspaste und Büffelmozzarella</a></li>
+                  </ul>
+               </li>
+               <li>C
+                  <ul class="ul-triangle">
+                     <li><a href="recipes/02 Vorspeisen/Champignons gef%C3%BCllt.html" target="_blank" style="cursor: pointer;">Champignons gefüllt</a></li>
+                     <li><a href="recipes/02 Vorspeisen/Champignons mariniert.html" target="_blank" style="cursor: pointer;">Champignons mariniert</a></li>
+                     <li><a href="recipes/04 Fleisch/Chicor%C3%A9e mit Schinken.html" target="_blank" style="cursor: pointer;">Chicorée mit Schinken</a></li>
+                     <li><a href="recipes/04 Fleisch/Chili con carne.html" target="_blank" style="cursor: pointer;">Chili con carne</a></li>
+                     <li><a href="recipes/10 Cr%C3%A8mes und Saucen/Chili-Sauce scharf und rauchig.html" target="_blank" style="cursor: pointer;">Chili-Sauce scharf und rauchig</a></li>
+                     <li><a href="recipes/06 Nudeln/Conchiglioni Siracusani.html" target="_blank" style="cursor: pointer;">Conchiglioni Siracusani</a></li>
+                     <li><a href="recipes/08 Beilagen/Couscous marocain.html" target="_blank" style="cursor: pointer;">Couscous marocain</a></li>
+                     <li><a href="recipes/02 Vorspeisen/Crostini mit Tapenade und Cr%C3%A8me d%E2%80%99artichaut.html" target="_blank" style="cursor: pointer;">Crostini mit Tapenade und Crème d’artichaut</a></li>
+                     <li><a href="recipes/10 Cr%C3%A8mes und Saucen/Curry-Cr%C3%A8me.html" target="_blank" style="cursor: pointer;">Curry-Crème</a></li>
+                     <li><a href="recipes/03 Suppen/Curry-Kl%C3%B6%C3%9Fchen.html" target="_blank" style="cursor: pointer;">Curry-Klößchen</a></li>
+                  </ul>
+               </li>
+               <li>E
+                  <ul class="ul-triangle">
+                     <li><a href="recipes/04 Fleisch/Entenbrust mit Maronen.html" target="_blank" style="cursor: pointer;">Entenbrust mit Maronen</a></li>
+                     <li><a href="recipes/11 S%C3%BC%C3%9Fes/Erdbeer-Tiramisu.html" target="_blank" style="cursor: pointer;">Erdbeer-Tiramisu</a></li>
+                  </ul>
+               </li>
+               <li>F
+                  <ul class="ul-triangle">
+                     <li><a href="recipes/03 Suppen/Feldgurken-Schaum.html" target="_blank" style="cursor: pointer;">Feldgurken-Schaum</a></li>
+                     <li><a href="recipes/04 Fleisch/Flammkuchen.html" target="_blank" style="cursor: pointer;">Flammkuchen</a></li>
+                     <li><a href="recipes/04 Fleisch/Fricco.html" target="_blank" style="cursor: pointer;">Fricco</a></li>
+                  </ul>
+               </li>
+               <li>G
+                  <ul class="ul-triangle">
+                     <li><a href="recipes/03 Suppen/Gazpacho.html" target="_blank" style="cursor: pointer;">Gazpacho</a></li>
+                     <li><a href="recipes/07 Vegetarisch/Gem%C3%BCse-Bulgur.html" target="_blank" style="cursor: pointer;">Gemüse-Bulgur</a></li>
+                     <li><a href="recipes/01 Grundrezepte/Getreide.html" target="_blank" style="cursor: pointer;">Getreide</a></li>
+                     <li><a href="recipes/08 Beilagen/Gnocchi fruchtig.html" target="_blank" style="cursor: pointer;">Gnocchi fruchtig</a></li>
+                     <li><a href="recipes/02 Vorspeisen/Gr%C3%BCner Spargel gebraten.html" target="_blank" style="cursor: pointer;">Grüner Spargel gebraten</a></li>
+                     <li><a href="recipes/03 Suppen/Gurken-Birnen-Suppe.html" target="_blank" style="cursor: pointer;">Gurken-Birnen-Suppe</a></li>
+                  </ul>
+               </li>
+               <li>H
+                  <ul class="ul-triangle">
+                     <li><a href="recipes/01 Grundrezepte/Hefeteig.html" target="_blank" style="cursor: pointer;">Hefeteig</a></li>
+                     <li><a href="recipes/09 Salate/Heringssalat.html" target="_blank" style="cursor: pointer;">Heringssalat</a></li>
+                     <li><a href="recipes/03 Suppen/Hokkaido-Suppe.html" target="_blank" style="cursor: pointer;">Hokkaido-Suppe</a></li>
+                     <li><a href="recipes/04 Fleisch/Holsteiner R%C3%BCbenmalheur.html" target="_blank" style="cursor: pointer;">Holsteiner Rübenmalheur</a></li>
+                     <li><a href="recipes/04 Fleisch/H%C3%BChnerbrust mit Harissa.html" target="_blank" style="cursor: pointer;">Hühnerbrust mit Harissa</a></li>
+                     <li><a href="recipes/04 Fleisch/Huhn in Aspik.html" target="_blank" style="cursor: pointer;">Huhn in Aspik</a></li>
+                     <li><a href="recipes/02 Vorspeisen/Hummus mit Paprika.html" target="_blank" style="cursor: pointer;">Hummus mit Paprika</a></li>
+                     <li><a href="recipes/02 Vorspeisen/Hummus mit Roter Bete.html" target="_blank" style="cursor: pointer;">Hummus mit Roter Bete</a></li>
+                  </ul>
+               </li>
+               <li>I
+                  <ul class="ul-triangle">
+                     <li><a href="recipes/09 Salate/Insalata di Fagioli.html" target="_blank" style="cursor: pointer;">Insalata di Fagioli</a></li>
+                     <li><a href="recipes/09 Salate/Insalata Valtellina.html" target="_blank" style="cursor: pointer;">Insalata Valtellina</a></li>
+                  </ul>
+               </li>
+               <li>J
+                  <ul class="ul-triangle">
+                     <li><a href="recipes/11 S%C3%BC%C3%9Fes/Joghurtcr%C3%A8me mit pochierten Plattpfirsichen.html" target="_blank" style="cursor: pointer;">Joghurtcrème mit pochierten Plattpfirsichen</a></li>
+                     <li><a href="recipes/10 Cr%C3%A8mes und Saucen/Joghurt-Dill-Sauce.html" target="_blank" style="cursor: pointer;">Joghurt-Dill-Sauce</a></li>
+                  </ul>
+               </li>
+               <li>K
+                  <ul class="ul-triangle">
+                     <li><a href="recipes/04 Fleisch/Kaninchen in Estragon-Senf-Sauce.html" target="_blank" style="cursor: pointer;">Kaninchen in Estragon-Senf-Sauce</a></li>
+                     <li><a href="recipes/02 Vorspeisen/Karamellisierte Schalotten.html" target="_blank" style="cursor: pointer;">Karamellisierte Schalotten</a></li>
+                     <li><a href="recipes/08 Beilagen/Karottengem%C3%BCse.html" target="_blank" style="cursor: pointer;">Karottengemüse</a></li>
+                     <li><a href="recipes/03 Suppen/Karottensuppe.html" target="_blank" style="cursor: pointer;">Karottensuppe</a></li>
+                     <li><a href="recipes/09 Salate/Kartoffelcarpaccio mit Orangen-Vinaigrette.html" target="_blank" style="cursor: pointer;">Kartoffelcarpaccio mit Orangen-Vinaigrette</a></li>
+                     <li><a href="recipes/09 Salate/Kartoffelsalat mit Paprika-Vinaigrette.html" target="_blank" style="cursor: pointer;">Kartoffelsalat mit Paprika-Vinaigrette</a></li>
+                     <li><a href="recipes/08 Beilagen/Kartoffel-Sellerie-Makronen.html" target="_blank" style="cursor: pointer;">Kartoffel-Sellerie-Makronen</a></li>
+                     <li><a href="recipes/07 Vegetarisch/Kartoffelteig-Piroggen.html" target="_blank" style="cursor: pointer;">Kartoffelteig-Piroggen</a></li>
+                     <li><a href="recipes/02 Vorspeisen/Knusperrollen.html" target="_blank" style="cursor: pointer;">Knusperrollen</a></li>
+                     <li><a href="recipes/04 Fleisch/Kofta B%E2%80%98siniyah.html" target="_blank" style="cursor: pointer;">Kofta B‘siniyah</a></li>
+                     <li><a href="recipes/04 Fleisch/Kohlrouladen nicht wie bei Muttern.html" target="_blank" style="cursor: pointer;">Kohlrouladen nicht wie bei Muttern</a></li>
+                     <li><a href="recipes/07 Vegetarisch/Kohl-Sauerkraut-Quiche.html" target="_blank" style="cursor: pointer;">Kohl-Sauerkraut-Quiche</a></li>
+                     <li><a href="recipes/03 Suppen/Kohlsuppe asiatisch.html" target="_blank" style="cursor: pointer;">Kohlsuppe asiatisch</a></li>
+                     <li><a href="recipes/02 Vorspeisen/Krabben-Cocktail.html" target="_blank" style="cursor: pointer;">Krabben-Cocktail</a></li>
+                     <li><a href="recipes/05 Fisch/Krautstrudel mit Lachs.html" target="_blank" style="cursor: pointer;">Krautstrudel mit Lachs</a></li>
+                     <li><a href="recipes/06 Nudeln/K%C3%BCrbiskernpesto.html" target="_blank" style="cursor: pointer;">Kürbiskernpesto</a></li>
+                  </ul>
+               </li>
+               <li>L
+                  <ul class="ul-triangle">
+                     <li><a href="recipes/02 Vorspeisen/Lachs-Bl%C3%A4tterteig-R%C3%B6llchen.html" target="_blank" style="cursor: pointer;">Lachs-Blätterteig-Röllchen</a></li>
+                     <li><a href="recipes/05 Fisch/Lachs-Garnelen-Quiche.html" target="_blank" style="cursor: pointer;">Lachs-Garnelen-Quiche</a></li>
+                     <li><a href="recipes/02 Vorspeisen/Lachs-Lassi.html" target="_blank" style="cursor: pointer;">Lachs-Lassi</a></li>
+                     <li><a href="recipes/06 Nudeln/Lachs-Mohn-Sauce.html" target="_blank" style="cursor: pointer;">Lachs-Mohn-Sauce</a></li>
+                     <li><a href="recipes/02 Vorspeisen/Lachs-Tatar mit gr%C3%BCnem Spargel.html" target="_blank" style="cursor: pointer;">Lachs-Tatar mit grünem Spargel</a></li>
+                     <li><a href="recipes/04 Fleisch/Lammgulasch mit Quitten und Aprikosen.html" target="_blank" style="cursor: pointer;">Lammgulasch mit Quitten und Aprikosen</a></li>
+                     <li><a href="recipes/02 Vorspeisen/Lauch mariniert.html" target="_blank" style="cursor: pointer;">Lauch mariniert</a></li>
+                     <li><a href="recipes/07 Vegetarisch/Lauchtorte.html" target="_blank" style="cursor: pointer;">Lauchtorte</a></li>
+                     <li><a href="recipes/06 Nudeln/Linsen-Bolognese.html" target="_blank" style="cursor: pointer;">Linsen-Bolognese</a></li>
+                     <li><a href="recipes/08 Beilagen/Linsen indisch.html" target="_blank" style="cursor: pointer;">Linsen indisch</a></li>
+                     <li><a href="recipes/09 Salate/Linsen-Salat Djemaa El Fna.html" target="_blank" style="cursor: pointer;">Linsen-Salat Djemaa El Fna</a></li>
+                  </ul>
+               </li>
+               <li>M
+                  <ul class="ul-triangle">
+                     <li><a href="recipes/08 Beilagen/Malheur von roten Zwiebeln.html" target="_blank" style="cursor: pointer;">Malheur von roten Zwiebeln</a></li>
+                     <li><a href="recipes/06 Nudeln/Mandel-Sherry-Balsamico-Sauce.html" target="_blank" style="cursor: pointer;">Mandel-Sherry-Balsamico-Sauce</a></li>
+                     <li><a href="recipes/06 Nudeln/Mangold-Sauce.html" target="_blank" style="cursor: pointer;">Mangold-Sauce</a></li>
+                     <li><a href="recipes/03 Suppen/Markkl%C3%B6%C3%9Fchen.html" target="_blank" style="cursor: pointer;">Markklößchen</a></li>
+                     <li><a href="recipes/11 S%C3%BC%C3%9Fes/Marmelade aus Blutorangen und Roter Bete.html" target="_blank" style="cursor: pointer;">Marmelade aus Blutorangen und Roter Bete</a></li>
+                     <li><a href="recipes/03 Suppen/Maronensuppe.html" target="_blank" style="cursor: pointer;">Maronensuppe</a></li>
+                     <li><a href="recipes/04 Fleisch/Maultaschen.html" target="_blank" style="cursor: pointer;">Maultaschen</a></li>
+                     <li><a href="recipes/09 Salate/Mediterraner Kartoffelsalat.html" target="_blank" style="cursor: pointer;">Mediterraner Kartoffelsalat</a></li>
+                     <li><a href="recipes/12 Cocktails/Melonen-Gurken-Cocktail.html" target="_blank" style="cursor: pointer;">Melonen-Gurken-Cocktail</a></li>
+                     <li><a href="recipes/03 Suppen/Minestrone.html" target="_blank" style="cursor: pointer;">Minestrone</a></li>
+                     <li><a href="recipes/01 Grundrezepte/Mirepoix.html" target="_blank" style="cursor: pointer;">Mirepoix</a></li>
+                     <li><a href="recipes/01 Grundrezepte/Mohnbutter.html" target="_blank" style="cursor: pointer;">Mohnbutter</a></li>
+                     <li><a href="recipes/06 Nudeln/Momos.html" target="_blank" style="cursor: pointer;">Momos</a></li>
+                     <li><a href="recipes/05 Fisch/Moules %C3%A0 la proven%C3%A7ale.html" target="_blank" style="cursor: pointer;">Moules à la provençale</a></li>
+                     <li><a href="recipes/03 Suppen/Muskatk%C3%BCrbis-Suppe mit Chilifeuer.html" target="_blank" style="cursor: pointer;">Muskatkürbis-Suppe mit Chilifeuer</a></li>
+                  </ul>
+               </li>
+               <li>N
+                  <ul class="ul-triangle">
+                     <li><a href="recipes/01 Grundrezepte/Nudelteig.html" target="_blank" style="cursor: pointer;">Nudelteig</a></li>
+                     <li><a href="recipes/11 S%C3%BC%C3%9Fes/Nussmakr%C3%B6nchen.html" target="_blank" style="cursor: pointer;">Nussmakrönchen</a></li>
+                  </ul>
+               </li>
+               <li>O
+                  <ul class="ul-triangle">
+                     <li><a href="recipes/11 S%C3%BC%C3%9Fes/Orange %C3%A0 la Canelle.html" target="_blank" style="cursor: pointer;">Orange à la Canelle</a></li>
+                  </ul>
+               </li>
+               <li>P
+                  <ul class="ul-triangle">
+                     <li><a href="recipes/04 Fleisch/Paella.html" target="_blank" style="cursor: pointer;">Paella</a></li>
+                     <li><a href="recipes/02 Vorspeisen/Paprika mariniert.html" target="_blank" style="cursor: pointer;">Paprika mariniert</a></li>
+                     <li><a href="recipes/11 S%C3%BC%C3%9Fes/Passionsfrucht-Cr%C3%A8me.html" target="_blank" style="cursor: pointer;">Passionsfrucht-Crème</a></li>
+                     <li><a href="recipes/07 Vegetarisch/Pastinaken und Karotten.html" target="_blank" style="cursor: pointer;">Pastinaken und Karotten</a></li>
+                     <li><a href="recipes/02 Vorspeisen/Peanut Masala.html" target="_blank" style="cursor: pointer;">Peanut Masala</a></li>
+                     <li><a href="recipes/01 Grundrezepte/Pizza.html" target="_blank" style="cursor: pointer;">Pizza</a></li>
+                     <li><a href="recipes/08 Beilagen/Polenta Regina.html" target="_blank" style="cursor: pointer;">Polenta Regina</a></li>
+                     <li><a href="recipes/02 Vorspeisen/Portugiesische Karotten.html" target="_blank" style="cursor: pointer;">Portugiesische Karotten</a></li>
+                     <li><a href="recipes/04 Fleisch/Putengeschnetzeltes Szechuan.html" target="_blank" style="cursor: pointer;">Putengeschnetzeltes Szechuan</a></li>
+                  </ul>
+               </li>
+               <li>Q
+                  <ul class="ul-triangle">
+                     <li><a href="recipes/01 Grundrezepte/Quiche-Teig.html" target="_blank" style="cursor: pointer;">Quiche-Teig</a></li>
+                  </ul>
+               </li>
+               <li>R
+                  <ul class="ul-triangle">
+                     <li><a href="recipes/02 Vorspeisen/R%C3%A4ucherlachs-Malheur mit Limetten-Cr%C3%A8me.html" target="_blank" style="cursor: pointer;">Räucherlachs-Malheur mit Limetten-Crème</a></li>
+                     <li><a href="recipes/08 Beilagen/Rote Bete.html" target="_blank" style="cursor: pointer;">Rote Bete</a></li>
+                     <li><a href="recipes/09 Salate/Rote Bete-Salat.html" target="_blank" style="cursor: pointer;">Rote Bete-Salat</a></li>
+                     <li><a href="recipes/09 Salate/Rote Bete-Salat mit Orangen und Waln%C3%BCssen.html" target="_blank" style="cursor: pointer;">Rote Bete-Salat mit Orangen und Walnüssen</a></li>
+                     <li><a href="recipes/02 Vorspeisen/Rote Bete-Tatar.html" target="_blank" style="cursor: pointer;">Rote Bete-Tatar</a></li>
+                     <li><a href="recipes/08 Beilagen/Rotkohl.html" target="_blank" style="cursor: pointer;">Rotkohl</a></li>
+                  </ul>
+               </li>
+               <li>S
+                  <ul class="ul-triangle">
+                     <li><a href="recipes/06 Nudeln/Safran-Mandel-Pesto.html" target="_blank" style="cursor: pointer;">Safran-Mandel-Pesto</a></li>
+                     <li><a href="recipes/06 Nudeln/Salbei-%C3%96l.html" target="_blank" style="cursor: pointer;">Salbei-Öl</a></li>
+                     <li><a href="recipes/04 Fleisch/Saltimbocca alla Romana.html" target="_blank" style="cursor: pointer;">Saltimbocca alla Romana</a></li>
+                     <li><a href="recipes/01 Grundrezepte/Salzzitronen.html" target="_blank" style="cursor: pointer;">Salzzitronen</a></li>
+                     <li><a href="recipes/03 Suppen/Sauerkrautsuppe ungarisch.html" target="_blank" style="cursor: pointer;">Sauerkrautsuppe ungarisch</a></li>
+                     <li><a href="recipes/10 Cr%C3%A8mes und Saucen/Scharfe Frischk%C3%A4se-Cr%C3%A8me.html" target="_blank" style="cursor: pointer;">Scharfe Frischkäse-Crème</a></li>
+                     <li><a href="recipes/09 Salate/Scharfer Bulgursalat mit Paprika.html" target="_blank" style="cursor: pointer;">Scharfer Bulgursalat mit Paprika</a></li>
+                     <li><a href="recipes/04 Fleisch/Schmorgurken.html" target="_blank" style="cursor: pointer;">Schmorgurken</a></li>
+                     <li><a href="recipes/05 Fisch/Schwarzwurzel-Lachs-Gratin.html" target="_blank" style="cursor: pointer;">Schwarzwurzel-Lachs-Gratin</a></li>
+                     <li><a href="recipes/04 Fleisch/Schweinefilet im Bl%C3%A4tterteig.html" target="_blank" style="cursor: pointer;">Schweinefilet im Blätterteig</a></li>
+                     <li><a href="recipes/07 Vegetarisch/Sellerieschnitzel.html" target="_blank" style="cursor: pointer;">Sellerieschnitzel</a></li>
+                     <li><a href="recipes/03 Suppen/Selleriesuppe.html" target="_blank" style="cursor: pointer;">Selleriesuppe</a></li>
+                     <li><a href="recipes/08 Beilagen/Semmelkn%C3%B6del.html" target="_blank" style="cursor: pointer;">Semmelknödel</a></li>
+                     <li><a href="recipes/04 Fleisch/Shakshuka %E2%80%93 bestimmt nicht original.html" target="_blank" style="cursor: pointer;">Shakshuka – bestimmt nicht original</a></li>
+                     <li><a href="recipes/02 Vorspeisen/Sm%C3%B6rg%C3%A5s mit Graved Lachs.html" target="_blank" style="cursor: pointer;">Smörgås mit Graved Lachs</a></li>
+                     <li><a href="recipes/04 Fleisch/Spaghetti-Schnitten.html" target="_blank" style="cursor: pointer;">Spaghetti-Schnitten</a></li>
+                     <li><a href="recipes/09 Salate/Spargelsalat italienisch.html" target="_blank" style="cursor: pointer;">Spargelsalat italienisch</a></li>
+                     <li><a href="recipes/07 Vegetarisch/Spinat-Quiche.html" target="_blank" style="cursor: pointer;">Spinat-Quiche</a></li>
+                     <li><a href="recipes/07 Vegetarisch/Steinpilzravioli an Paprikaschaum.html" target="_blank" style="cursor: pointer;">Steinpilzravioli an Paprikaschaum</a></li>
+                     <li><a href="recipes/01 Grundrezepte/Strudelteig.html" target="_blank" style="cursor: pointer;">Strudelteig</a></li>
+                     <li><a href="recipes/04 Fleisch/Sultan-Rolle.html" target="_blank" style="cursor: pointer;">Sultan-Rolle</a></li>
+                     <li><a href="recipes/04 Fleisch/Szegediner Gulasch.html" target="_blank" style="cursor: pointer;">Szegediner Gulasch</a></li>
+                  </ul>
+               </li>
+               <li>T
+                  <ul class="ul-triangle">
+                     <li><a href="recipes/09 Salate/Tabouleh.html" target="_blank" style="cursor: pointer;">Tabouleh</a></li>
+                     <li><a href="recipes/04 Fleisch/Tafelspitz.html" target="_blank" style="cursor: pointer;">Tafelspitz</a></li>
+                     <li><a href="recipes/07 Vegetarisch/Tomatenpfannkuchen.html" target="_blank" style="cursor: pointer;">Tomatenpfannkuchen</a></li>
+                     <li><a href="recipes/06 Nudeln/Tomatensauce.html" target="_blank" style="cursor: pointer;">Tomatensauce</a></li>
+                     <li><a href="recipes/03 Suppen/Tomatensuppe.html" target="_blank" style="cursor: pointer;">Tomatensuppe</a></li>
+                     <li><a href="recipes/03 Suppen/Tom Khaa Kai.html" target="_blank" style="cursor: pointer;">Tom Khaa Kai</a></li>
+                     <li><a href="recipes/07 Vegetarisch/Tortilla de Chili y Culantro.html" target="_blank" style="cursor: pointer;">Tortilla de Chili y Culantro</a></li>
+                  </ul>
+               </li>
+               <li>W
+                  <ul class="ul-triangle">
+                     <li><a href="recipes/09 Salate/Waldorf-Salat.html" target="_blank" style="cursor: pointer;">Waldorf-Salat</a></li>
+                     <li><a href="recipes/10 Cr%C3%A8mes und Saucen/Wei%C3%9Fweinsauce und Pfefferschaum.html" target="_blank" style="cursor: pointer;">Weißweinsauce und Pfefferschaum</a></li>
+                     <li><a href="recipes/10 Cr%C3%A8mes und Saucen/Wermut-Estragon-Sauce.html" target="_blank" style="cursor: pointer;">Wermut-Estragon-Sauce</a></li>
+                  </ul>
+               </li>
+               <li>Z
+                  <ul class="ul-triangle">
+                     <li><a href="recipes/04 Fleisch/Zitronenh%C3%A4hnchen.html" target="_blank" style="cursor: pointer;">Zitronenhähnchen</a></li>
+                     <li><a href="recipes/02 Vorspeisen/Zucchini mit Sesam und Serrano.html" target="_blank" style="cursor: pointer;">Zucchini mit Sesam und Serrano</a></li>
+                     <li><a href="recipes/07 Vegetarisch/Zucchini-Puffer.html" target="_blank" style="cursor: pointer;">Zucchini-Puffer</a></li>
+                     <li><a href="recipes/05 Fisch/Zucchini-R%C3%A4ucherlachs-Quiche.html" target="_blank" style="cursor: pointer;">Zucchini-Räucherlachs-Quiche</a></li>
+                     <li><a href="recipes/03 Suppen/Zwiebelsuppe.html" target="_blank" style="cursor: pointer;">Zwiebelsuppe</a></li>
+                     <li><a href="recipes/02 Vorspeisen/Zwiebeltaschen.html" target="_blank" style="cursor: pointer;">Zwiebeltaschen</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div><script src="js/collapser.js"></script></body>
+</html>

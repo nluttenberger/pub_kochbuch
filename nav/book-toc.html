@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+       
+       <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1" />
+       <title>Inhaltsverzeichnis</title>
+              
+       <!-- base -->
+       <base href="file:///C:/Users/nlutt/Documents/Websites/kochbuch/experimental/">
+       <!--<base href="https://kochbuch.fruschtique.de/">--> 
+       <!-- base -->
+              
+       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans" >
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower" >
+       <link rel="stylesheet" href="recipe.css" type="text/css" >
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+       <script src="js/wordcloud2.js"></script>
+       <script src="js/lodash.min.js"></script>
+</head>
+   <body>
+      <div class="boxtainer"><div class="title">
+    <h1></h1>
+</div>
+
+<div class="logo">
+    <div>
+        <a href="index.html">
+            <img class="logoImage" src="https://storage.googleapis.com/testx.fruschtique.de/logos/fruschtique%20Logo%20grau%20transparent.png" alt="Logo" title="Kochbuch-Logo">
+        </a>
+    </div>
+    <div>
+        <ul class="nav-top">
+            <!-- eins -->
+            <!-- zwei -->
+            <!-- drei -->
+            <li class="nav-item">
+                <a href="nav/toc-01 Grundrezepte.html">
+                    <img style="display:inline;" src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-toc.png" alt="detailliertes Inhaltsverzeichnis" title="detailliertes Inhaltsverzeichnis">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="nav/cat-tiles-only.html">
+                    <img style="display:inline;" src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-tiles.png" alt="Kachelmenu" title="Kachelmenü">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="nav/index-ingdt.html">
+                    <img style="display:inline;" src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-index-ingredient.png" alt="Zutaten-Index" title="Zutaten-Index">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="nav/index-rcp.html">
+                    <img style="display:inline;" src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-index-rcp.png" alt="Rezept-Index" title="Rezept-Index">
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" style="cursor: pointer; text-decoration: none;">
+                    <img src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-more.png" alt="mehr" title="mehr">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="nav/about_cookbook.html">Über das Kochbuch</a></li>
+                    <li><a href="nav/about_author.html">Über mich</a></li>
+                    <li><a href="nav/book-help.html">Gebrauchsanweisung</a></li>
+                    <li><a href="nav/book-blog.html">Making of …</a></li>
+                    <li><a href="nav/book-versions.html">Versionsgeschichte</a> </li>
+                    <li><a href="nav/book-impressum.html">Impressum</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+         <div id="toc-list" class="l-small">
+            <ul class="list-unstyled" style="margin: 6em;">
+               <li><a href="recipes/01 Grundrezepte/01 Grundrezepte.html" class="toc-list-link-big">Grundrezepte</a></li>
+               <li><a href="recipes/02 Vorspeisen/02 Vorspeisen.html" class="toc-list-link-big">Vorspeisen</a></li>
+               <li><a href="recipes/03 Suppen/03 Suppen.html" class="toc-list-link-big">Suppen</a></li>
+               <li><a href="recipes/04 Fleisch/04 Fleisch.html" class="toc-list-link-big">Fleisch</a></li>
+               <li><a href="recipes/05 Fisch/05 Fisch.html" class="toc-list-link-big">Fisch</a></li>
+               <li><a href="recipes/06 Nudeln/06 Nudeln.html" class="toc-list-link-big">Nudeln</a></li>
+               <li><a href="recipes/07 Vegetarisch/07 Vegetarisch.html" class="toc-list-link-big">Vegetarisch</a></li>
+               <li><a href="recipes/08 Beilagen/08 Beilagen.html" class="toc-list-link-big">Beilagen</a></li>
+               <li><a href="recipes/09 Salate/09 Salate.html" class="toc-list-link-big">Salate</a></li>
+               <li><a href="recipes/10 Cr%C3%A8mes und Saucen/10 Cr%C3%A8mes und Saucen.html" class="toc-list-link-big">Crèmes und Saucen</a></li>
+               <li><a href="recipes/11 S%C3%BC%C3%9Fes/11 S%C3%BC%C3%9Fes.html" class="toc-list-link-big">Süßes</a></li>
+               <li><a href="recipes/12 Cocktails/12 Cocktails.html" class="toc-list-link-big">Cocktails</a></li>
+            </ul>
+         </div>
+         <div class="r-big"><img src="https://storage.googleapis.com/testx.fruschtique.de/img/Das%20Auge%20des%20guten%20Geschmacks.jpg" alt="Das Auge des guten Geschmacks" class="rcpImage" title="Das Auge des guten Geschmacks"></div>
+      </div>
+   </body>
+</html>

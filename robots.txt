@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: http://kochbuch.fruschtique.de/sm.xml

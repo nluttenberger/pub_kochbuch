@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="de">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">       
+       <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1" />
+       <title>Gebrauchsanweisung</title>
+              
+       <!-- base -->
+       <base href="file:///C:/Users/nlutt/Documents/Websites/kochbuch/experimental/">
+       <!--<base href="https://kochbuch.fruschtique.de/">--> 
+       <!-- base -->
+              
+       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans" >
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower" >
+       <link rel="stylesheet" href="recipe.css" type="text/css" >
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+       <script src="js/wordcloud2.js"></script>
+       <script src="js/lodash.min.js"></script>
+</head>
+   <body>
+      <div class="boxtainer"><div class="title">
+    <h1>Gebrauchsanweisung</h1>
+</div>
+
+<div class="logo">
+    <div>
+        <a href="index.html">
+            <img class="logoImage" src="https://storage.googleapis.com/testx.fruschtique.de/logos/fruschtique%20Logo%20grau%20transparent.png" alt="Logo" title="Kochbuch-Logo">
+        </a>
+    </div>
+    <div>
+        <ul class="nav-top">
+            <!-- eins -->
+            <!-- zwei -->
+            <!-- drei -->
+            <li class="nav-item">
+                <a href="nav/book-toc.html">
+                    <img style="display:inline;" src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-toc.png" alt="Inhaltsverzeichnis" title="Inhaltsverzeichnis">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="nav/cat-tiles-only.html">
+                    <img style="display:inline;" src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-tiles.png" alt="Kachelmenu" title="Kachelmenü">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="nav/index-ingdt.html">
+                    <img style="display:inline;" src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-index-ingredient.png" alt="Zutaten-Index" title="Zutaten-Index">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="nav/index-rcp.html">
+                    <img style="display:inline;" src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-index-rcp.png" alt="Rezept-Index" title="Rezept-Index">
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" style="cursor: pointer; text-decoration: none;">
+                    <img src="https://storage.googleapis.com/testx.fruschtique.de/icons/tile-more.png" alt="mehr" title="mehr">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="nav/about_cookbook.html">Über das Kochbuch</a></li>
+                    <li><a href="nav/about_author.html">Über mich</a></li>
+                    <li><a href="nav/book-help.html">Gebrauchsanweisung</a></li>
+                    <li><a href="nav/book-blog.html">Making of …</a></li>
+                    <li><a href="nav/book-versions.html">Versionsgeschichte</a> </li>
+                    <li><a href="nav/book-impressum.html">Impressum</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+         <div class="full"><div class="col-2">
+    <div class="intro-col">
+        <h3>Navigation im Kochbuch <br>
+            <small>(siehe Icons oben rechts)</small>
+        </h3>
+        <div class="intro-col-item">
+            <div class="shadow3">
+                <a href="toc-01%20Grundrezepte.html">
+                    <img class="small-tile" src="../img/icons/tile-toc.png" alt="Inhaltsverzeichnis" title="Inhaltsverzeichnis"/>
+                </a>
+            </div>
+            <div>
+                <p class="indent-1em">Das <em>Inhaltsverzeichnis</em> zeigt die Rezepte in der Reihenfolge, wie man sie
+                    auch in einem klassischen Kochbuch erwarten würde: Vorspeise, Hauptspeise, Nachspeise usw.</p>
+            </div>
+        </div>
+        <div class="intro-col-item">
+            <div class="shadow3">
+                <a href="cat-tiles-only.html">
+                    <img class="small-tile" src="../img/icons/tile-tiles.png" alt="Kachelmenu" title="Kachelmenu"/>
+                </a>
+            </div>
+            <div>
+                <p class="indent-1em">Im <em>Kachelmenü</em> sind die Rezepte nach gemeinsamen Merkmalen sortiert. Jede Kachel
+                steht für ein Merkmal, also z.B. eine Kachel für italienische Rezepte, eine für deutsche usw.</p>
+            </div>
+        </div>
+        <div class="intro-col-item">
+            <div class="shadow3">
+                <a href="index-ingdt.html">
+                    <img class="small-tile" src="../img/icons/tile-index-ingredient.png" alt="Zutaten-Index"
+                         title="Zutaten-Index"/>
+                </a>
+            </div>
+            <div>
+                <p class="indent-1em">Der <em>Zutaten-Index</em> listet alle Zutaten auf, die ich in meinen Rezepten verwende.
+                Bei Click auf eine Zutat werden die Rezepte gezeigt, in denen diese Zutat eine Rolle spielt.</p>
+            </div>
+        </div>
+        <div class="intro-col-item">
+            <div class="shadow3">
+                <a href="index-rcp.html">
+                    <img class="small-tile" src="../img/icons/tile-index-rcp.png" alt="Rezept-Index" title="Rezept-Index"/>
+                </a>
+            </div>
+            <div>
+                <p class="indent-1em">Der <em>Rezept-Index</em> listet alle Rezepte auf, die in meinem Kochbuch enthalten sind.</p>
+            </div>
+        </div>
+        <div class="intro-col-item">
+            <div class="shadow3">
+                <img class="small-tile" src="../img/icons/tile-more.png" alt="Mehr" title="mehr"/>
+            </div>
+            <div>
+                <p class="indent-1em">Das Kochbuch hat noch mehr zu bieten (Dropdown-Menu):</p>
+                <ul>
+                    <li style="margin: 1em; line-height: 1.84em;">Ich berichte über die <a href="about_cookbook.html">Entstehungsgeschichte
+                        und die Technik des Kochbuchs</a>. Und mache mir einige Gedanken zum richtigen Aufschreiben von
+                        Rezepten.
+                    </li>
+                    <li style="margin: 1em; line-height: 1.84em;">Ich erzähle, <a href="about_me.html">wie ich zum Kochen
+                        gekommen bin</a>, und wie sich meine Leidenschaft für's Kochen entwickelt hat.
+                    </li>
+                    <li style="margin: 1em; line-height: 1.84em;">Und auch zu dieser <a
+                            href="book-help.html">Gebrauchsanweisung</a> kann man navigieren.
+                    </li>
+                    <li style="margin: 1em; line-height: 1.84em;">Für mich und alle diejenigen, die ganz besonders interessiert
+                        sind: Ich schreibe ein <a href="book-blog.html">"Making
+                            of &hellip;"</a> für mein Kochbuch, so etwas wie ein Entwickler-Tagebuch.
+                    </li>
+                    <li style="margin: 1em; line-height: 1.84em;">Auch eine kleine <a href="book-versions.html">Versionsgeschichte</a>
+                        gibt es; ganz oben
+                        im Dokument ist die aktuelle Version des Kochbuchs angegeben.
+                    </li>
+                    <li style="margin: 1em; line-height: 1.84em;">Einige rechtliche Dinge müssen sein: das <a
+                            href="book-impressum.html">Impressum</a>.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="intro-col">
+        <h3>Navigation auf den Rezeptseiten <br>
+            <small>(Icons nur dort)</small>
+        </h3>
+        <div class="intro-col-item">
+            <div class="shadow3">
+                <img class="small-tile" src="../img/icons/tile-rcp-text.png" alt="Rezepttext einblenden"
+                     title="Rezepttext einblenden"/>
+            </div>
+            <div>
+                <p class="indent-1em">Bei Click auf dieses Icon (oben links im Rezeptbild) wird der <em>Rezepttext</em>
+                eingeblendet.</p>
+            </div>
+        </div>
+        <div class="intro-col-item">
+            <div class="shadow3">
+                <img class="small-tile" src="../img/icons/tile-backward.png" alt="Zurückblättern" title="Zurückblättern"/>
+            </div>
+            <div>
+                <p class="indent-1em"><em>Zurückblättern</em> in der Inhaltsverzeichnis-Reihenfolge.</p>
+            </div>
+        </div>
+        <div class="intro-col-item">
+            <div class="shadow3">
+                <img class="small-tile" src="../img/icons/tile-forward.png" alt="Weiterblättern" title="Weiterblättern"/>
+            </div>
+            <div>
+                <p class="indent-1em"><em>Weiterblättern</em> in der Inhaltsverzeichnis-Reihenfolge.</p>
+            </div>
+        </div>
+        <h3>Rezepte drucken</h3>
+        <div class="intro-col-item">
+            <p>Rezepte kann man über die Druckfunktion des Browsers ausdrucken.</p>
+        </div>
+        <h3>Und bei Click auf das fruschtique-Logo &hellip;</h3>
+        <div class="intro-col-item">
+            <p>&hellip; gelangt man wieder zurück zur Startseite.</p>
+        </div>
+    </div>
+</div></div>
+      </div>
+   </body>
+</html>
