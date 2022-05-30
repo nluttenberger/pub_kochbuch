@@ -52,7 +52,7 @@ function buildCarousel(i,recipe,imgUrl) {
 // keep in mind: img and thumbs paths don't need chapter info
 let myCat;
 myCat = window.location.pathname;
-myCat = decodeURI(myCat.substring(myCat.lastIndexOf('-')+1));
+myCat = decodeURI(myCat.substring(0,myCat.lastIndexOf('-')));
 console.log (myCat);
 myCat = myCat.substring(0,myCat.indexOf('.html'))
 console.log (myCat);
