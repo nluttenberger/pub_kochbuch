@@ -53,7 +53,9 @@ function buildCarousel(i,recipe,imgUrl) {
 let myCat;
 myCat = window.location.pathname;
 myCat = decodeURI(myCat.substring(myCat.lastIndexOf('-')+1));
+console.log (myCat);
 myCat = myCat.substring(0,myCat.indexOf('.html'))
+console.log (myCat);
 let oLength = document.getElementById(myCat).options.length;
 let rcpArr = [];
 for (let i=0;i<oLength;i++) {
